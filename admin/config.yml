@@ -1,0 +1,183 @@
+# Cecília táskák szerkesztőfelülete (Decap CMS)
+# A "repo" sorba a GitHub-felhasználónév/repónév kerül.
+backend:
+  name: github
+  repo: FELHASZNALONEV/sewbycecilia-site
+  branch: main
+  commit_messages:
+    update: "Frissítés: {{slug}}"
+    uploadMedia: "Kép feltöltése: {{path}}"
+
+locale: hu
+site_url: https://sewbycecilia.hu
+display_url: https://sewbycecilia.hu
+media_folder: img/feltoltott
+public_folder: /img/feltoltott
+
+collections:
+  - name: oldal
+    label: Az oldal tartalma
+    editor: { preview: false }
+    files:
+      - name: kollekcio
+        label: Kollekció (főoldal)
+        file: data/kollekcio.json
+        format: json
+        fields:
+          - { name: evszak, label: "Kollekció neve", widget: string, hint: "Például: Téli kollekció. Az utolsó szó dőlten jelenik meg a főoldalon." }
+          - { name: bevezeto, label: "Bevezető szöveg", widget: text }
+          - { name: idezet, label: "Kiemelt mondat", widget: string, hint: "A *csillagok közé* írt rész dőlt lesz." }
+          - { name: tortenet, label: "A kollekció története", widget: text }
+          - { name: foto, label: "Főoldali fotó", widget: image, required: false }
+          - { name: fotoLeiras, label: "Mi látszik a fotón?", widget: string, required: false, hint: "Rövid leírás látássérült látogatóknak és a Google-nek." }
+          - name: szinek
+            label: "A kollekció színei"
+            widget: list
+            fields:
+              - { name: nev, label: "Szín neve", widget: string }
+              - { name: szin, label: "Szín", widget: color }
+
+      - name: taskak
+        label: Táskák
+        file: data/taskak.json
+        format: json
+        fields:
+          - name: taskak
+            label: Táskák
+            label_singular: táska
+            widget: list
+            summary: "{{fields.nev}} · {{fields.ar}} Ft"
+            fields:
+              - { name: nev, label: "Név", widget: string }
+              - { name: ar, label: "Ár (Ft)", widget: number, value_type: int, min: 0 }
+              - name: tipus
+                label: "Típus"
+                widget: select
+                default: kollekcio
+                options:
+                  - { label: "Kollekció (megrendelésre készül)", value: kollekcio }
+                  - { label: "Limitált darab", value: limitalt }
+              - { name: keszlet, label: "Készlet (db)", widget: number, value_type: int, min: 0, required: false, hint: "Csak limitált darabnál számít. 0 = Elfogyott." }
+              - { name: szinek, label: "Választható színek", widget: list, hint: "Vesszővel elválasztva, például: Dió, Karamell, Fekete" }
+              - { name: foto, label: "Fotó", widget: image, required: false, hint: "Álló (4:5 arányú) fotó mutat a legjobban." }
+              - name: rajz
+                label: "Rajz, ha nincs fotó"
+                widget: select
+                default: tote
+                options:
+                  - { label: "Bevásárlótáska", value: tote }
+                  - { label: "Válltáska", value: hobo }
+                  - { label: "Keresztpántos", value: cross }
+                  - { label: "Vödörtáska", value: bucket }
+                  - { label: "Kézitáska", value: clutch }
+                  - { label: "Minitáska", value: mini }
+
+      - name: boxok
+        label: Mi készül? boxok
+        file: data/boxok.json
+        format: json
+        fields:
+          - name: boxok
+            label: Boxok
+            label_singular: box
+            widget: list
+            summary: "{{fields.nev}} · {{fields.ar}} Ft"
+            fields:
+              - { name: nev, label: "Név", widget: string }
+              - { name: ar, label: "Ár (Ft)", widget: number, value_type: int, min: 0 }
+              - { name: szoveg, label: "Leírás", widget: text }
+              - { name: foto, label: "Fotó", widget: image, required: false }
+              - name: rajz
+                label: "Rajz, ha nincs fotó"
+                widget: select
+                default: box
+                options:
+                  - { label: "Doboz", value: box }
+                  - { label: "Doboz charmmal", value: charm }
+
+      - name: hirek
+        label: Hírek, akciók
+        file: data/hirek.json
+        format: json
+        fields:
+          - name: hirek
+            label: Hírek
+            label_singular: hír
+            widget: list
+            summary: "{{fields.datum}} · {{fields.cim}}"
+            hint: "A lista első eleme jelenik meg nagyban a főoldalon. Az újat húzd a lista elejére."
+            fields:
+              - name: tipus
+                label: "Típus"
+                widget: select
+                options: ["Újdonság", "Akció", "Hír"]
+              - { name: datum, label: "Dátum", widget: string, hint: "Például: 2026. november 2." }
+              - { name: cim, label: "Cím", widget: string }
+              - { name: szoveg, label: "Szöveg", widget: text }
+              - name: link
+                label: "Hová vigyen a link?"
+                widget: select
+                options:
+                  - { label: "Táskák", value: "#taskak" }
+                  - { label: "Boxok", value: "#boxok" }
+                  - { label: "Ajándékkártya", value: "#ajandekkartya" }
+                  - { label: "Rendelés menete", value: "#rendeles-menete" }
+                  - { label: "Gyakori kérdések", value: "#gyik" }
+                  - { label: "Kapcsolat", value: "#kapcsolat" }
+              - { name: linkSzoveg, label: "A link szövege", widget: string }
+              - { name: foto, label: "Fotó (csak az első hírnél látszik)", widget: image, required: false }
+
+      - name: gyik
+        label: Gyakori kérdések
+        file: data/gyik.json
+        format: json
+        fields:
+          - name: csoportok
+            label: Témák
+            label_singular: téma
+            widget: list
+            summary: "{{fields.nev}}"
+            fields:
+              - { name: nev, label: "Téma", widget: string }
+              - name: kerdesek
+                label: Kérdések
+                label_singular: kérdés
+                widget: list
+                summary: "{{fields.kerdes}}"
+                fields:
+                  - { name: kerdes, label: "Kérdés", widget: string }
+                  - { name: valasz, label: "Válasz", widget: text }
+
+      - name: ajandekkartya
+        label: Ajándékkártya
+        file: data/ajandekkartya.json
+        format: json
+        fields:
+          - name: osszegek
+            label: "Választható összegek (Ft)"
+            widget: list
+            field: { name: osszeg, label: "Összeg (Ft)", widget: number, value_type: int, min: 1000 }
+
+      - name: popup
+        label: Felugró reklám
+        file: data/popup.json
+        format: json
+        fields:
+          - { name: aktiv, label: "Megjelenjen?", widget: boolean, default: true, hint: "Kapcsold ki, ha most nem szeretnél felugró reklámot." }
+          - { name: cimke, label: "Címke", widget: string, required: false, hint: "Például: Akció, Újdonság." }
+          - { name: cim, label: "Cím", widget: string, hint: "A *csillagok közé* írt rész dőlt lesz." }
+          - { name: szoveg, label: "Szöveg", widget: text, required: false }
+          - name: link
+            label: "Hová vigyen a gomb?"
+            widget: select
+            options:
+              - { label: "Táskák", value: "#taskak" }
+              - { label: "Boxok", value: "#boxok" }
+              - { label: "Ajándékkártya", value: "#ajandekkartya" }
+              - { label: "Rendelés menete", value: "#rendeles-menete" }
+              - { label: "Gyakori kérdések", value: "#gyik" }
+              - { label: "Kapcsolat", value: "#kapcsolat" }
+          - { name: linkSzoveg, label: "A gomb szövege", widget: string }
+          - { name: foto, label: "Fotó", widget: image, required: false }
+          - { name: lejarat, label: "Meddig látszódjon?", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY.MM.DD.", time_format: false, required: false, hint: "Ezután a nap után magától eltűnik. Üresen hagyva nincs lejárat." }
+          - { name: kesleltetes, label: "Hány másodperc múlva ugorjon fel?", widget: number, value_type: int, min: 0, default: 4 }

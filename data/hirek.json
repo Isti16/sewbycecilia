@@ -1,0 +1,40 @@
+{
+  "hirek": [
+    {
+      "tipus": "Újdonság",
+      "datum": "2026. november 2.",
+      "cim": "Megérkeztek a Mi készül? boxok",
+      "szoveg": "Neszesszert vagy charmot készíthetsz otthon. A dobozban minden alapanyagot és videós útmutatót találsz.",
+      "link": "#boxok",
+      "linkSzoveg": "Megnézem a boxokat",
+      "foto": ""
+    },
+    {
+      "tipus": "Akció",
+      "datum": "2026. november 1.",
+      "cim": "Ingyenes szállítás november végéig",
+      "szoveg": "A téli kollekció minden darabjára, ha a rendelésed november 30-ig megérkezik.",
+      "link": "#taskak",
+      "linkSzoveg": "A kollekció darabjai",
+      "foto": ""
+    },
+    {
+      "tipus": "Hír",
+      "datum": "2026. október 20.",
+      "cim": "Elkészült a téli kollekció",
+      "szoveg": "Mostantól rendelhető az évszak új állandó kollekciója.",
+      "link": "#taskak",
+      "linkSzoveg": "Tovább a táskákhoz",
+      "foto": ""
+    },
+    {
+      "tipus": "Újdonság",
+      "datum": "2026. október 5.",
+      "cim": "Már ajándékkártyát is vásárolhatsz",
+      "szoveg": "Online megveszed, és saját kódot kapsz hozzá, amit a megajándékozott a rendeléskor vált be.",
+      "link": "#ajandekkartya",
+      "linkSzoveg": "Tovább az ajándékkártyához",
+      "foto": ""
+    }
+  ]
+}

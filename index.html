@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cecília táskák</title>
+<meta name="description" content="Kézzel varrt táskák, Mi készül? boxok és ajándékkártya. Rendelés online, a rendelési lappal.">
+<meta property="og:title" content="Cecília táskák">
+<meta property="og:description" content="Kézzel varrt táskák, Mi készül? boxok és ajándékkártya.">
+<meta property="og:image" content="https://sewbycecilia.hu/img/teli-kollekcio.jpg">
+<meta property="og:url" content="https://sewbycecilia.hu/">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>body{margin:0;padding:0}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>
+/* Elrendezés: elegáns divatház-katalógus. Sok levegő, finom vonalak, a köszönőkártya színei: törtfehér alap és #492A13 barna, köztük ugyanezek világosabb árnyalatai.
+   Tudatosan egyetlen, világos megjelenés: a fekete logó mindig világos alapon áll. Nincs animáció és felugró ablak. */
+:root {
+  --ivory: #F8F4EF;     /* alap háttér, fejléc */
+  --bezs: #E9DFD3;      /* világos sávok */
+  --homok: #DDCFBF;     /* középtónus */
+  --teve: #8F7762;      /* varrásvonalak */
+  --konyak: #2F1A0B;    /* gombok és linkek sötétebb állapota */
+  --dio: #492A13;       /* sötét sávok, gombok */
+  --kave: #492A13;      /* szöveg */
+  --halk: #6E5240;      /* másodlagos szöveg */
+  --vonal: #C9B5A1;     /* hajszálvonalak */
+  --hiba: #8C2B1A;
+  --cimke: #492A13;
+  --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { background: var(--ivory); }
+body { background: var(--ivory); color: var(--kave); font: 400 17px/1.65 var(--body); }
+.wrap { max-width: 1240px; margin-inline: auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 700px) { .wrap { padding-left: max(48px, env(safe-area-inset-left, 0px)); padding-right: max(48px, env(safe-area-inset-right, 0px)); } }
+h1, h2, h3, p, ul, ol, fieldset, figure { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+fieldset { border: 0; min-width: 0; }
+legend { padding: 0; }
+h1, h2 { font-family: var(--display); font-weight: 400; line-height: 1.06; text-wrap: balance; }
+h1 { font-size: clamp(3rem, 7.5vw, 6rem); }
+h2 { font-size: clamp(2rem, 3.8vw, 3.1rem); }
+h3 { font-size: 1.125rem; font-weight: 500; line-height: 1.35; }
+h1 em, h2 em { font-weight: 400; }
+a { color: inherit; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+h1:focus { outline: none; }
+.lead { font-size: 1.1875rem; line-height: 1.6; max-width: 32em; }
+.muted { color: var(--halk); }
+.small { font-size: .9rem; }
+.eyebrow { font-size: .72rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--cimke); }
+.stack { display: grid; gap: 1.1rem; align-content: start; }
+.stack > * { min-width: 0; }
+.stitch { border: 0; border-top: 1px solid var(--vonal); margin: 0; }
+
+/* Sötét és tónusos sávok: a színeket helyben írják felül */
+.dark { background: var(--dio); color: var(--ivory); --kave: #F8F4EF; --halk: #DCCFC1; --vonal: #7A5F4B; --cimke: #E2D5C6; --hiba: #F6C9B8; }
+.sand { background: var(--bezs); }
+
+/* Varrott címke */
+.tag { display: inline-block; background: var(--ivory); color: #492A13; font-size: .7rem; font-weight: 600; letter-spacing: .08em; padding: .4rem .7rem; outline: 1px dashed #8F7762; outline-offset: -3px; }
+.tag.off { background: #E9DFD3; color: #6E5240; }
+
+.btn { display: inline-block; font: 600 .78rem/1.2 var(--body); letter-spacing: .16em; text-transform: uppercase; background: var(--kave); color: var(--ivory); border: 1px solid var(--kave); border-radius: 0; padding: 1.05rem 1.7rem; text-decoration: none; cursor: pointer; text-align: center; }
+.btn:hover { background: var(--konyak); border-color: var(--konyak); color: #F8F4EF; }
+.btn.ghost { background: transparent; color: var(--kave); }
+.btn.ghost:hover { background: #492A13; border-color: #492A13; color: #F8F4EF; }
+.dark .btn { background: #F8F4EF; color: #492A13; border-color: #F8F4EF; }
+.dark .btn:hover { background: #DDCFBF; border-color: #DDCFBF; color: #492A13; }
+.dark .btn.ghost { background: transparent; color: #F8F4EF; }
+.dark .btn.ghost:hover { background: #F8F4EF; color: #492A13; border-color: #F8F4EF; }
+.btn-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+.textlink { font-weight: 500; text-decoration: underline; }
+.textlink:hover { color: var(--konyak); }
+
+/* Bemutató-sáv: élesítéskor törölhető */
+.demo { background: var(--bezs); color: #6E5240; font-size: .8rem; line-height: 1.4; padding-block: .45rem; }
+
+/* Fejléc */
+.site-head { background: var(--ivory); }
+.site-head .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem; padding-block: 1.25rem; }
+.logo-link { display: block; line-height: 0; }
+.logo { display: block; width: 136px; height: auto; }
+.nav ul { display: flex; flex-wrap: wrap; gap: .25rem 2rem; }
+.nav a { display: block; padding: .4rem 0; font-weight: 500; font-size: .76rem; letter-spacing: .15em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid transparent; }
+.nav a:hover { border-bottom-color: var(--vonal); }
+.nav a[aria-current="page"] { border-bottom-color: var(--kave); }
+
+main { display: block; }
+.section { padding-block: clamp(3.5rem, 8vw, 7rem); }
+.section.tight-top { padding-top: 0; }
+.head-block { display: grid; gap: 1rem; margin-bottom: clamp(2rem, 4vw, 3.5rem); max-width: 44rem; }
+.page-head { padding-block: clamp(3rem, 7vw, 6rem); display: grid; gap: 1.25rem; }
+.page-head .lead { color: var(--halk); }
+
+/* Főoldal: kollekció */
+.hero { display: grid; gap: 2.5rem; padding-block: clamp(2rem, 5vw, 4rem) clamp(3rem, 7vw, 6rem); align-items: center; }
+.hero > * { min-width: 0; }
+.hero .copy { display: grid; gap: 1.6rem; justify-items: start; }
+.hero-art img { display: block; width: 100%; height: auto; }
+@media (min-width: 860px) { .hero { grid-template-columns: 6fr 5fr; gap: 5rem; } }
+
+.split { display: grid; gap: 2.5rem; }
+.split > * { min-width: 0; }
+@media (min-width: 860px) { .split { grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; } }
+
+.swatches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem .75rem; margin-top: .5rem; }
+@media (min-width: 560px) { .swatches { grid-template-columns: repeat(6, 1fr); } }
+.swatch { display: grid; gap: .5rem; font-size: .85rem; }
+.swatch i { display: block; aspect-ratio: 3 / 4; background: var(--c); border: 1px solid #7A5F4B; }
+
+/* Főoldal: hírek */
+.hirek { display: grid; gap: 2.5rem; }
+.hirek > * { min-width: 0; }
+@media (min-width: 860px) { .hirek { grid-template-columns: 5fr 6fr; gap: 5rem; align-items: start; } }
+.hir-lead { display: grid; gap: 1.1rem; }
+.hir-lead .pic { aspect-ratio: 5 / 4; }
+.hir-lead .pic svg { width: 56%; }
+.hir-list li { display: grid; gap: .4rem; padding-block: 1.6rem; border-top: 1px solid var(--vonal); }
+.hir-list li:last-child { border-bottom: 1px solid var(--vonal); }
+.hir-top { display: flex; flex-wrap: wrap; gap: .25rem 1rem; align-items: baseline; }
+.hir-date { font-size: .85rem; color: var(--halk); font-variant-numeric: tabular-nums; }
+.hir-title { font: 400 1.5rem/1.2 var(--display); }
+
+/* Termékkártya */
+.grid { display: grid; gap: 3rem 2rem; }
+@media (min-width: 640px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+.card { display: grid; gap: 1rem; grid-template-rows: auto 1fr; min-width: 0; }
+.pic { position: relative; aspect-ratio: 4 / 5; display: grid; place-items: center; background: var(--tone, var(--homok)); }
+.pic svg { width: 78%; height: auto; }
+.pic > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.pic .tag { position: absolute; left: .75rem; top: .75rem; }
+.card .info { display: grid; gap: .35rem; align-content: start; }
+.card .meta { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+.card h3 { font: 400 1.35rem/1.2 var(--display); }
+.price { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.card .btn { margin-top: .75rem; justify-self: start; padding: .8rem 1.2rem; }
+.card.sold .pic svg { opacity: .5; }
+
+/* Űrlap */
+.form { display: grid; gap: 1.25rem; }
+.fields-2 { display: grid; gap: 1.25rem; }
+@media (min-width: 560px) { .fields-2 { grid-template-columns: 1fr 1fr; } }
+.field { display: grid; gap: .35rem; min-width: 0; }
+.field label, .legend { font-weight: 500; font-size: .95rem; }
+.opt { font-weight: 400; color: var(--halk); }
+input[type=text], input[type=email], input[type=tel], input[type=number], select, textarea {
+  width: 100%; font: 400 1rem/1.4 var(--body); color: #492A13; background: #FFFDFA;
+  border: 1px solid #8F7762; border-radius: 0; padding: .75rem .85rem; min-height: 3rem;
+}
+textarea { min-height: 6rem; resize: vertical; }
+input[aria-invalid=true], select[aria-invalid=true] { border-color: var(--hiba); border-width: 2px; }
+.err { color: var(--hiba); font-size: .875rem; font-weight: 500; }
+.check { display: grid; grid-template-columns: auto 1fr; gap: .6rem; align-items: start; font-size: .95rem; }
+.check input { appearance: none; -webkit-appearance: none; display: grid; place-content: center; width: 1.2rem; height: 1.2rem; margin: .22rem 0 0; background: #FFFDFA; border: 1px solid #8F7762; border-radius: 0; cursor: pointer; }
+.check input:checked { background: #492A13; border-color: #492A13; }
+.check input:checked::after { content: ""; width: .34rem; height: .64rem; border: solid #F8F4EF; border-width: 0 2px 2px 0; transform: translateY(-1px) rotate(45deg); }
+.dark .check input:checked { background: #F8F4EF; border-color: #F8F4EF; }
+.dark .check input:checked::after { border-color: #492A13; }
+.form-panel { background: var(--ivory); padding: clamp(1.5rem, 3.5vw, 2.75rem); }
+.notice { display: grid; gap: .8rem; background: var(--ivory); color: #492A13; --halk: #6E5240; padding: 1.75rem; outline: 1px dashed #8F7762; outline-offset: -7px; }
+.notice > * { min-width: 0; }
+.notice:focus { outline: 1px dashed #8F7762; }
+.summary { display: grid; grid-template-columns: auto 1fr; gap: .15rem 1rem; font-size: .95rem; }
+.summary dt { color: var(--halk); }
+.summary dd { margin: 0; overflow-wrap: anywhere; }
+dl { margin: 0; }
+
+/* Lépések */
+.steps { display: grid; }
+.steps li { display: grid; grid-template-columns: 3.5rem 1fr; gap: .25rem 1rem; padding-block: 1.6rem; border-top: 1px solid var(--vonal); }
+.steps li:last-child { border-bottom: 1px solid var(--vonal); }
+.steps .n { font: 400 2.5rem/1 var(--display); color: var(--kave); grid-row: span 2; }
+.steps p { grid-column: 2; color: var(--halk); max-width: 38rem; }
+.steps.compact li { padding-block: 1.2rem; }
+
+/* Boxok */
+.box-row { display: grid; gap: 1.75rem; }
+@media (min-width: 720px) { .box-row { grid-template-columns: 5fr 6fr; gap: 4rem; align-items: center; } .box-row.flip { grid-template-columns: 6fr 5fr; } .box-row.flip .pic { order: 2; } }
+.box-row > * { min-width: 0; }
+.box-row + .box-row { margin-top: clamp(3rem, 6vw, 5rem); }
+.includes { display: grid; gap: .35rem; }
+.includes li { padding-left: 1.4rem; position: relative; }
+.includes li::before { content: ""; position: absolute; left: 0; top: .82em; width: .85rem; border-top: 1px solid var(--konyak); }
+
+/* Ajándékkártya */
+.gift-layout { display: grid; gap: 3rem; }
+.gift-layout > * { min-width: 0; }
+@media (min-width: 900px) { .gift-layout { grid-template-columns: 6fr 5fr; gap: 5rem; align-items: start; } }
+.amounts { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
+.amounts label { cursor: pointer; }
+.amounts input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.amounts span { display: block; padding: .65rem .95rem; border: 1px solid #8F7762; font-variant-numeric: tabular-nums; background: #FFFDFA; }
+.amounts input:checked + span { background: var(--dio); color: var(--ivory); border-color: var(--dio); }
+.amounts input:focus-visible + span { outline: 2px solid var(--kave); outline-offset: 2px; }
+.stage { background: var(--dio); padding: clamp(1.25rem, 4vw, 2.5rem); }
+.gcard { background: var(--ivory); color: #492A13; padding: clamp(1.25rem, 4vw, 2rem); position: relative; display: grid; gap: 1.1rem; }
+.gcard::after { content: ""; position: absolute; inset: 8px; border: 1px dashed #8F7762; pointer-events: none; }
+.gcard .top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 1rem; align-items: flex-start; }
+.gcard .logo { width: 104px; }
+.gcard .amt { font: 400 clamp(1.9rem, 4.5vw, 2.6rem)/1 var(--display); font-variant-numeric: lining-nums; white-space: nowrap; }
+.gcard .msg { font: italic 400 1.15rem/1.4 var(--display); min-height: 1.6em; overflow-wrap: anywhere; }
+.gcard .who { font-size: .95rem; color: #6E5240; overflow-wrap: anywhere; }
+.code { font-weight: 600; letter-spacing: .1em; font-variant-numeric: tabular-nums; font-size: 1.05rem; overflow-wrap: anywhere; }
+
+/* Hírlevél és lábléc */
+.news { display: grid; gap: 2.5rem; }
+@media (min-width: 860px) { .news { grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; } }
+.news > * { min-width: 0; }
+.news-row { display: grid; gap: .75rem; }
+@media (min-width: 560px) { .news-row { grid-template-columns: 1fr auto; align-items: end; } }
+.news-row .btn { min-height: 3rem; }
+.site-foot { background: var(--ivory); font-size: .9rem; }
+.site-foot .wrap { display: flex; flex-wrap: wrap; gap: 1.25rem 3rem; justify-content: space-between; align-items: center; padding-block: 2.5rem; }
+.foot-links { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; }
+.social { display: flex; flex-wrap: wrap; gap: .6rem; }
+.social a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid #492A13; border-radius: 50%; color: #492A13; }
+.social a:hover { background: #492A13; color: #F8F4EF; }
+.social svg { width: 1.3rem; height: 1.3rem; display: block; }
+.foot-right { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2.5rem; }
+.contact-list { display: grid; gap: 1.25rem; margin-top: .75rem; }
+.contact-list > div { display: grid; gap: .5rem; }
+.faq-group { display: grid; gap: 1.25rem; padding-block: clamp(2rem, 4vw, 3.5rem); border-top: 1px solid var(--vonal); }
+.faq-group:first-child { border-top: 0; padding-top: 0; }
+.faq-group:last-child { padding-bottom: 0; }
+.faq-group > * { min-width: 0; }
+@media (min-width: 860px) { .faq-group { grid-template-columns: 4fr 7fr; gap: 4rem; } }
+.faq-item { border-bottom: 1px solid var(--vonal); }
+.faq-item:first-child { border-top: 1px solid var(--vonal); }
+.faq-item summary { display: flex; justify-content: space-between; gap: 1.5rem; align-items: baseline; padding-block: 1.05rem; font-weight: 500; cursor: pointer; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; font: 400 1.5rem/1 var(--display); flex: none; }
+.faq-item[open] summary::after { content: "–"; }
+.faq-item p { padding-bottom: 1.25rem; color: var(--halk); max-width: 38rem; }
+.faq-item p.todo { font-style: italic; }
+
+/* Felugró reklám */
+.promo { border: 0; padding: 0; margin: auto; width: min(92vw, 760px); max-height: 92vh; background: var(--ivory); color: var(--kave); box-shadow: 0 24px 60px rgba(47,26,11,.35); }
+.promo::backdrop { background: rgba(47,26,11,.55); }
+.promo[open] { animation: promo-in .35s ease-out; }
+@keyframes promo-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .promo[open] { animation: none; } }
+.promo-inner { display: grid; position: relative; outline: 1px dashed #8F7762; outline-offset: -9px; }
+.promo-inner.has-img { grid-template-columns: 1fr; }
+@media (min-width: 640px) { .promo-inner.has-img { grid-template-columns: 5fr 6fr; } }
+.promo-img { background: var(--homok); min-height: 180px; }
+.promo-img img { display: block; width: 100%; height: 100%; max-height: 40vh; object-fit: cover; }
+@media (min-width: 640px) { .promo-img img { max-height: none; } }
+.promo-copy { display: grid; gap: 1rem; align-content: center; justify-items: start; padding: clamp(1.75rem, 4vw, 3rem); }
+.promo-copy h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); }
+.promo-close { position: absolute; top: .9rem; right: .9rem; width: 2.5rem; height: 2.5rem; display: grid; place-items: center; background: var(--ivory); color: #492A13; border: 1px solid var(--vonal); border-radius: 0; font: 400 1.5rem/1 var(--display); cursor: pointer; z-index: 1; }
+.promo-close:hover { background: var(--bezs); }
+.legal-block { display: grid; gap: .4rem; padding-block: 1.5rem; border-top: 1px solid var(--vonal); max-width: 44rem; }
+</style>
+</head>
+<body>
+<!-- Netlify űrlapfelismeréshez: ezek nem látszanak, a mezőneveknek egyezniük kell a lenti küldő kóddal -->
+<form name="rendeles-taska" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="termek"><input name="ar"><input name="szin"><input name="nev"><input name="email"><input name="telefon"><input name="cim"><input name="ajandekkartya"><textarea name="megjegyzes"></textarea></form>
+<form name="rendeles-box" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="termek"><input name="ar"><input name="mennyiseg"><input name="nev"><input name="email"><input name="telefon"><input name="cim"><input name="ajandekkartya"><textarea name="megjegyzes"></textarea></form>
+<form name="ajandekkartya" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="osszeg"><input name="kinek"><input name="kitol"><textarea name="uzenet"></textarea><input name="email"></form>
+<form name="kapcsolat" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="nev"><input name="email"><textarea name="uzenet"></textarea></form>
+<form name="hirlevel" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="email"></form>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="cecilia-logo" viewBox="0 0 672 302"><g transform="matrix(1,0,0,1,-1019.616593,-1934.245536)">
+        <g transform="matrix(3.405001,0,0,3.405001,519.828763,-3245.528909)">
+            <path d="M329.402,1553.21C326.513,1553.21 324.68,1556.96 323.902,1564.46L323.486,1564.46L318.319,1556.126C319.763,1554.793 321.375,1553.765 323.152,1553.043C324.93,1552.321 326.763,1551.96 328.652,1551.96C330.597,1551.96 332.388,1552.349 334.027,1553.126C335.666,1553.904 337.069,1554.987 338.236,1556.376C339.402,1557.765 340.319,1559.432 340.986,1561.376C341.652,1563.321 341.986,1565.46 341.986,1567.793L341.986,1588.543C341.986,1589.932 342.138,1591.029 342.444,1591.835C342.75,1592.64 343.291,1593.349 344.069,1593.96L344.069,1594.376L339.902,1594.376C338.18,1594.376 336.777,1593.835 335.694,1592.751C334.611,1591.668 334.069,1590.265 334.069,1588.543L334.069,1587.376C333.236,1589.821 332.069,1591.751 330.569,1593.168C329.069,1594.585 327.347,1595.293 325.402,1595.293C323.958,1595.293 322.625,1595.029 321.402,1594.501C320.18,1593.974 319.125,1593.237 318.236,1592.293C317.347,1591.349 316.652,1590.237 316.152,1588.96C315.652,1587.682 315.402,1586.293 315.402,1584.793C315.402,1582.515 315.888,1580.376 316.861,1578.376C317.833,1576.376 319.152,1574.612 320.819,1573.085C322.486,1571.557 324.458,1570.307 326.736,1569.335C329.013,1568.362 331.458,1567.765 334.069,1567.543C334.069,1562.487 333.694,1558.835 332.944,1556.585C332.194,1554.335 331.013,1553.21 329.402,1553.21ZM334.069,1568.626C330.958,1569.126 328.458,1570.71 326.569,1573.376C324.68,1576.043 323.736,1579.376 323.736,1583.376C323.736,1585.876 324.138,1587.835 324.944,1589.251C325.75,1590.668 326.875,1591.376 328.319,1591.376C330.041,1591.376 331.43,1590.265 332.486,1588.043C333.541,1585.821 334.069,1582.932 334.069,1579.376L334.069,1568.626Z"/>
+        </g>
+        <g transform="matrix(3.405001,0,0,3.405001,519.828763,-3245.528909)">
+            <path d="M299.652,1545.126C299.652,1543.737 300.083,1542.612 300.944,1541.751C301.805,1540.89 302.93,1540.46 304.319,1540.46C305.708,1540.46 306.833,1540.89 307.694,1541.751C308.555,1542.612 308.986,1543.737 308.986,1545.126C308.986,1546.515 308.555,1547.654 307.694,1548.543C306.833,1549.432 305.708,1549.876 304.319,1549.876C302.93,1549.876 301.805,1549.432 300.944,1548.543C300.083,1547.654 299.652,1546.515 299.652,1545.126Z"/>
+        </g>
+        <g transform="matrix(3.405001,0,0,3.405001,519.828763,-3245.528909)">
+            <path d="M301.236,1560.96C301.236,1559.571 301.083,1558.474 300.777,1557.668C300.472,1556.862 299.93,1556.154 299.152,1555.543L299.152,1555.126L308.736,1552.793L309.152,1552.793L309.152,1588.626C309.152,1590.015 309.305,1591.112 309.611,1591.918C309.916,1592.724 310.458,1593.432 311.236,1594.043L311.236,1594.46L299.152,1594.46L299.152,1594.043C299.93,1593.432 300.472,1592.724 300.777,1591.918C301.083,1591.112 301.236,1590.015 301.236,1588.626L301.236,1560.96Z"/>
+        </g>
+        <g transform="matrix(3.405001,0,0,3.405001,519.828763,-3245.528909)">
+            <path d="M283.736,1543.46C283.736,1542.071 283.583,1540.974 283.277,1540.168C282.972,1539.362 282.43,1538.654 281.652,1538.043L281.652,1537.626L291.236,1535.293L291.652,1535.293L291.652,1588.626C291.652,1590.015 291.805,1591.112 292.111,1591.918C292.416,1592.724 292.958,1593.432 293.736,1594.043L293.736,1594.46L281.652,1594.46L281.652,1594.043C282.43,1593.432 282.972,1592.724 283.277,1591.918C283.583,1591.112 283.736,1590.015 283.736,1588.626L283.736,1543.46Z"/>
+        </g>
+        <g transform="matrix(3.405001,0,0,3.405001,519.828763,-3245.528909)">
+            <path d="M211.986,1595.293C209.319,1595.293 206.875,1594.751 204.652,1593.668C202.43,1592.585 200.513,1591.085 198.902,1589.168C197.291,1587.251 196.041,1584.974 195.152,1582.335C194.263,1579.696 193.819,1576.793 193.819,1573.626C193.819,1570.682 194.222,1567.904 195.027,1565.293C195.833,1562.682 196.902,1560.39 198.236,1558.418C199.569,1556.446 201.138,1554.876 202.944,1553.71C204.75,1552.543 206.652,1551.96 208.652,1551.96C210.597,1551.96 212.375,1552.418 213.986,1553.335C215.597,1554.251 216.958,1555.543 218.069,1557.21C219.18,1558.876 220.041,1560.89 220.652,1563.251C221.263,1565.612 221.569,1568.265 221.569,1571.21L221.569,1572.46L202.236,1572.46C202.402,1575.349 202.805,1577.987 203.444,1580.376C204.083,1582.765 204.875,1584.821 205.819,1586.543C206.763,1588.265 207.861,1589.599 209.111,1590.543C210.361,1591.487 211.708,1591.96 213.152,1591.96C214.041,1591.96 214.833,1591.862 215.527,1591.668C216.222,1591.474 216.888,1591.154 217.527,1590.71C218.166,1590.265 218.819,1589.668 219.486,1588.918C220.152,1588.168 220.847,1587.237 221.569,1586.126L222.819,1586.543C220.597,1592.376 216.986,1595.293 211.986,1595.293ZM218.236,1571.21C216.958,1571.21 215.986,1570.765 215.319,1569.876C214.652,1568.987 214.125,1567.876 213.736,1566.543C213.347,1565.21 213.055,1563.765 212.861,1562.21C212.666,1560.654 212.416,1559.21 212.111,1557.876C211.805,1556.543 211.375,1555.432 210.819,1554.543C210.263,1553.654 209.43,1553.21 208.319,1553.21C207.43,1553.21 206.611,1553.599 205.861,1554.376C205.111,1555.154 204.458,1556.251 203.902,1557.668C203.347,1559.085 202.916,1560.751 202.611,1562.668C202.305,1564.585 202.152,1566.71 202.152,1569.043L202.152,1570.126C202.152,1570.46 202.18,1570.821 202.236,1571.21L218.236,1571.21Z"/>
+        </g>
+        <g transform="matrix(0.211029,-0.087691,0.210826,0.507356,625.088616,620.978444)">
+            <path d="M839.843,2976.2C840.882,2973.89 842.713,2970.162 842.942,2969.696C866.759,2921.215 922.508,2864.848 957.787,2856.194C970.516,2853.071 988.072,2854.563 988.785,2865.142C990.063,2884.08 939.348,2938.184 860.587,2980.52C842.822,2990.069 849.23,2991.395 838.126,3002.55L666.485,3174.874C665.589,3175.755 661.5,3179.772 652.854,3185.402C652.685,3185.512 645.589,3189.828 644.957,3190.212C642.569,3191.665 641.393,3190.852 637.512,3191.548C637.465,3190.424 634.567,3189.538 634.52,3188.414C634.438,3186.464 636.125,3184.571 637.139,3182.667C640.629,3176.112 644.602,3172.036 645.471,3171.143C649.67,3166.834 804.272,3011.702 818.088,2997.839C825.226,2990.677 832.008,2983.451 839.534,2976.359C839.537,2976.357 839.641,2976.303 839.843,2976.2ZM870.686,2958.454C890.419,2946.089 916.346,2927.936 938.727,2905.948C958.96,2886.07 967.892,2870.974 966.657,2864.709C949.48,2870.382 912.953,2898.859 883.558,2939.089C878.279,2946.313 874.039,2952.847 870.686,2958.454Z"/>
+        </g>
+        <g transform="matrix(0.96387,0,0,0.96387,-108.64233,-957.733504)">
+            <path d="M1632.03,3058.956C1631.352,3098.887 1583.143,3103.151 1563.446,3092.088C1531.279,3074.022 1534.942,3045.235 1550.435,3050.399C1552.244,3051.002 1554.247,3057.01 1554.456,3057.638C1557.526,3066.846 1568.893,3052.211 1572.153,3056.029C1589.027,3075.795 1526.29,3090.564 1500.563,3072.117" style="fill:none;stroke:black;stroke-width:3.33px;"/>
+        </g>
+        <g transform="matrix(3.400689,0.171304,-0.171304,3.400689,628.804112,-3276.523493)">
+            <path d="M219.652,1595.293C216.041,1595.293 212.666,1594.515 209.527,1592.96C206.388,1591.404 203.652,1589.279 201.319,1586.585C198.986,1583.89 197.152,1580.71 195.819,1577.043C194.486,1573.376 193.819,1569.46 193.819,1565.293C193.819,1561.015 194.444,1557.043 195.694,1553.376C196.944,1549.71 198.68,1546.543 200.902,1543.876C203.125,1541.21 205.736,1539.112 208.736,1537.585C211.736,1536.057 215.013,1535.293 218.569,1535.293C220.487,1535.293 222.276,1535.426 223.894,1535.83C224.151,1535.894 224.404,1535.965 224.652,1536.043C226.761,1536.708 232.151,1538.179 233.249,1538.626C233.249,1538.626 228.588,1543.721 226.171,1541.249C223.755,1538.776 220.652,1536.96 217.652,1536.96C212.986,1536.96 209.375,1538.946 206.819,1542.918C204.263,1546.89 202.986,1552.515 202.986,1559.793C202.986,1564.237 203.513,1568.39 204.569,1572.251C205.625,1576.112 207.083,1579.46 208.944,1582.293C210.805,1585.126 212.986,1587.362 215.486,1589.001C217.986,1590.64 220.68,1591.46 223.569,1591.46C225.847,1591.46 227.944,1590.71 229.861,1589.21C231.777,1587.71 233.625,1585.376 235.402,1582.21L236.569,1583.043C234.569,1587.376 232.236,1590.501 229.569,1592.418C226.902,1594.335 223.597,1595.293 219.652,1595.293Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(3.405001,0,-0,3.405001,327.517408,-3245.673215)">
+            <path d="M301.236,1595.293C298.569,1595.293 296.125,1594.751 293.902,1593.668C291.68,1592.585 289.763,1591.085 288.152,1589.168C286.541,1587.251 285.291,1584.974 284.402,1582.335C283.513,1579.696 283.069,1576.793 283.069,1573.626C283.069,1570.515 283.5,1567.64 284.361,1565.001C285.222,1562.362 286.416,1560.085 287.944,1558.168C289.472,1556.251 291.277,1554.737 293.361,1553.626C295.444,1552.515 297.68,1551.96 300.069,1551.96C302.125,1551.96 304.027,1552.376 305.777,1553.21C307.527,1554.043 310.034,1556.168 311.812,1557.945C307.581,1560.065 306.385,1559.036 305.111,1557.132C303.858,1555.261 301.819,1553.626 299.486,1553.626C296.819,1553.626 294.805,1554.932 293.444,1557.543C292.083,1560.154 291.402,1563.987 291.402,1569.043C291.402,1572.376 291.68,1575.432 292.236,1578.21C292.791,1580.987 293.555,1583.404 294.527,1585.46C295.5,1587.515 296.666,1589.112 298.027,1590.251C299.388,1591.39 300.847,1591.96 302.402,1591.96C303.291,1591.96 304.083,1591.862 304.777,1591.668C305.472,1591.474 306.138,1591.154 306.777,1590.71C307.416,1590.265 308.069,1589.668 308.736,1588.918C309.402,1588.168 310.097,1587.237 310.819,1586.126L312.069,1586.543C309.847,1592.376 306.236,1595.293 301.236,1595.293Z" style="fill-rule:nonzero;"/>
+        </g>
+    </g></symbol>
+  <symbol id="ic-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="7" r="1.15" fill="currentColor"/></symbol>
+  <symbol id="ic-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3h2.9c.2 2 1.5 3.5 3.8 3.8v2.9c-1.5 0-2.8-.5-3.8-1.2v6.7a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3a3 3 0 1 0 2.1 2.9V3z"/></symbol>
+  <symbol id="ic-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.6 21v-8h2.8l.5-3.2h-3.3V7.8c0-.9.4-1.6 1.7-1.6H17V3.3c-.4-.1-1.4-.2-2.5-.2-2.6 0-4.3 1.5-4.3 4.3v2.4H7.4V13h2.8v8h3.4z"/></symbol>
+</svg>
+
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo-link" href="#fooldal" aria-label="Cecília, főoldal"><svg class="logo" viewBox="0 0 672 302" aria-hidden="true"><use href="#cecilia-logo"></use></svg></a>
+    <nav class="nav" aria-label="Fő menü">
+      <ul>
+        <li><a href="#taskak" data-nav="taskak">Táskák</a></li>
+        <li><a href="#boxok" data-nav="boxok">Mi készül? boxok</a></li>
+        <li><a href="#ajandekkartya" data-nav="ajandekkartya">Ajándékkártya</a></li>
+        <li><a href="#rendeles-menete" data-nav="rendeles-menete">Rendelés menete</a></li>
+        <li><a href="#kapcsolat" data-nav="kapcsolat">Kapcsolat</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- FŐOLDAL -->
+<div data-view="fooldal" hidden>
+  <div class="wrap">
+    <div class="hero">
+      <div class="copy">
+        <span class="eyebrow">Az aktuális kollekció</span>
+        <h1 tabindex="-1" id="home-title"></h1>
+        <p class="lead" id="home-intro"></p>
+        <a class="btn" href="#taskak">A kollekció darabjai</a>
+      </div>
+      <figure class="hero-art"><img width="919" height="1152" alt="A téli kollekció anyagmintái és táskavázlatai egy tóparti fotón: barna, bordó, gyöngyházfehér, fekete, őzmintás és krémszínű szőrmés anyagok." src="img/teli-kollekcio.jpg"></figure>
+    </div>
+  </div>
+
+  <section class="dark">
+    <div class="wrap section split">
+      <div class="stack">
+        <span class="eyebrow">A kollekcióról</span>
+        <h2 id="home-quote"></h2>
+      </div>
+      <div class="stack">
+        <p id="home-story"></p>
+        <p class="eyebrow" style="margin-top:1rem">A kollekció színei</p>
+        <div class="swatches" id="home-swatches"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="section">
+      <div class="head-block">
+        <span class="eyebrow">Hírek, újdonságok, akciók</span>
+        <h2>Mi történik most?</h2>
+      </div>
+      <div class="hirek" id="home-news"></div>
+    </section>
+  </div>
+</div>
+
+<!-- TÁSKÁK -->
+<div data-view="taskak" hidden>
+  <div class="dark"><div class="wrap"><div class="page-head">
+      <span class="eyebrow">Elérhető és rendelhető</span>
+      <h1 tabindex="-1">Táskák</h1>
+      <p class="lead">Itt mindig azt látod, ami éppen rendelhető. Válassz táskát, és töltsd ki a lap alján a rendelési lapot.</p>
+      <div class="btn-row"><a class="btn ghost" href="#rendelesi-lap" id="jump-order">Ugrás a rendelési lapra</a></div>
+    </div></div></div>
+  <div class="wrap">
+    <section class="section">
+      <div class="head-block">
+        <span class="eyebrow">Megrendelésre készül</span>
+        <h2 data-season-title></h2>
+      </div>
+      <div class="grid" id="collection-grid"></div>
+    </section>
+  </div>
+  <section class="dark"><div class="wrap section">
+      <div class="head-block">
+        <span class="eyebrow">Amíg a készlet tart</span>
+        <h2>Limitált darabok</h2>
+        <p class="muted">Ezekből csak pár darab készül.</p>
+      </div>
+      <div class="grid" id="limited-grid"></div>
+  </div></section>
+  <section class="sand" id="rendelesi-lap">
+    <div class="wrap section split">
+      <div class="stack">
+        <span class="eyebrow">Fizetni most még nem kell</span>
+        <h2>Rendelési lap</h2>
+        <p>A rendelés beérkezése után e-mailben írok neked a végösszegről, a fizetésről és az elkészülés idejéről.</p>
+        <p><a href="#rendeles-menete">Így zajlik a rendelés</a></p>
+      </div>
+      <div class="form-panel" id="bag-order"></div>
+    </div>
+  </section>
+</div>
+
+<!-- BOXOK -->
+<div data-view="boxok" hidden>
+  <div class="dark"><div class="wrap"><div class="page-head">
+      <span class="eyebrow">Otthoni készítőknek</span>
+      <h1 tabindex="-1">Mi készül? boxok</h1>
+      <p class="lead">Egy doboz, benne minden alapanyaggal és videós útmutatóval. Neked csak a kedved kell hozzá.</p>
+    </div></div></div>
+  <div class="wrap">
+    <section class="section" id="box-list"></section>
+    <hr class="stitch">
+    <section class="section">
+      <div class="head-block"><h2>Így működik</h2></div>
+      <ol class="steps compact">
+        <li><span class="n">1</span><h3>Megrendeled a boxot</h3><p>Kitöltöd a lenti rendelési lapot, én pedig e-mailben válaszolok a részletekkel.</p></li>
+        <li><span class="n">2</span><h3>Megkapod a dobozt</h3><p>Benne van minden alapanyag, amire a készítéshez szükséged lesz.</p></li>
+        <li><span class="n">3</span><h3>Elkészíted a videó alapján</h3><p>A videós útmutatót a saját tempódban követheted.</p></li>
+      </ol>
+    </section>
+  </div>
+  <section class="sand">
+    <div class="wrap section split">
+      <div class="stack">
+        <span class="eyebrow">Box rendelése</span>
+        <h2>Rendelési lap</h2>
+        <p>Add meg, melyik boxot szeretnéd, és e-mailben írok a fizetésről és a szállításról.</p>
+      </div>
+      <div class="form-panel" id="box-order"></div>
+    </div>
+  </section>
+</div>
+
+<!-- AJÁNDÉKKÁRTYA -->
+<div data-view="ajandekkartya" hidden>
+  <div class="dark"><div class="wrap"><div class="page-head">
+      <span class="eyebrow">Saját kóddal, e-mailben</span>
+      <h1 tabindex="-1">Ajándékkártya</h1>
+      <p class="lead">Válassz összeget, írj hozzá pár sort, és küldd el a rendelést. E-mailben megírom a fizetés módját, a fizetés után pedig elküldöm az egyedi kódot. A kódot a rendelési lapon lehet beváltani táskára vagy boxra.</p>
+    </div></div></div>
+  <div class="wrap">
+    <section class="section gift-layout">
+      <form class="form" id="gift-form" novalidate>
+        <fieldset>
+          <legend class="legend">Összeg</legend>
+          <div class="amounts" id="gift-amounts"></div>
+        </fieldset>
+        <div class="field" id="gift-custom-wrap" hidden>
+          <label for="g-custom">Egyéni összeg (Ft)</label>
+          <input type="number" id="g-custom" min="1000" step="500" inputmode="numeric" placeholder="például 12 000">
+          <div class="err" id="g-custom-err" hidden></div>
+        </div>
+        <div class="fields-2">
+          <div class="field"><label for="g-to">Kinek szól? <span class="opt">(nem kötelező)</span></label><input type="text" id="g-to" autocomplete="off" maxlength="40"></div>
+          <div class="field"><label for="g-from">Kitől? <span class="opt">(nem kötelező)</span></label><input type="text" id="g-from" autocomplete="off" maxlength="40"></div>
+        </div>
+        <div class="field">
+          <label for="g-msg">Üzenet <span class="opt">(nem kötelező, legfeljebb 120 karakter)</span></label>
+          <textarea id="g-msg" maxlength="120" rows="2"></textarea>
+        </div>
+        <div class="field">
+          <label for="g-email">A te e-mail címed</label>
+          <input type="email" id="g-email" autocomplete="email">
+          <div class="err" id="g-email-err" hidden></div>
+          <span class="small muted">Ide küldöm a kódot.</span>
+        </div>
+        <label class="check"><input type="checkbox" id="g-terms"><span>Elfogadom az <a href="#jogi">ÁSZF-et és az adatkezelési tájékoztatót</a>.</span></label>
+        <div class="err" id="g-terms-err" hidden></div>
+        <div class="err" id="g-send-err" hidden></div>
+        <div><button class="btn" type="submit" id="g-submit">Megrendelem</button></div>
+      </form>
+      <div class="stack">
+        <span class="eyebrow">Így fog kinézni</span>
+        <div class="stage"><div class="gcard">
+          <div class="top"><svg class="logo" viewBox="0 0 672 302" aria-hidden="true"><use href="#cecilia-logo"></use></svg><div class="amt" id="p-amt"></div></div>
+          <div class="msg" id="p-msg"></div>
+          <div class="who" id="p-who"></div>
+          <div class="code" id="p-code">CECILIA-····-····</div>
+        </div></div>
+        <div class="notice" id="gift-result" hidden role="status" tabindex="-1">
+          <h3>Megkaptam az ajándékkártya-rendelésedet</h3>
+          <p id="r-text"></p>
+          <div class="btn-row"><button class="btn ghost" type="button" id="r-new">Új ajándékkártya</button></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- RENDELÉS MENETE -->
+<div data-view="rendeles-menete" hidden>
+  <div class="dark"><div class="wrap"><div class="page-head">
+      <span class="eyebrow">Lépésről lépésre</span>
+      <h1 tabindex="-1">Rendelés menete</h1>
+      <p class="lead">A rendelést a weboldalon adod le, minden továbbit e-mailben intézünk el. Így mindig tudod, hol tart a táskád.</p>
+    </div></div></div>
+  <div class="wrap">
+    <section class="section">
+      <ol class="steps">
+        <li><span class="n">1</span><h3>Kiválasztod a táskát</h3><p>A Táskák oldalon azt látod, ami most rendelhető: az évszak állandó kollekcióját és a limitált darabokat.</p></li>
+        <li><span class="n">2</span><h3>Kitöltöd a rendelési lapot</h3><p>Megadod a választott táskát, a színt és az elérhetőségeidet. Ekkor még nem kell fizetned.</p></li>
+        <li><span class="n">3</span><h3>E-mailben visszaigazolom</h3><p>Megírom a végösszeget, a fizetés módját és azt, hogy mikorra készül el a táskád.</p></li>
+        <li><span class="n">4</span><h3>Elkészítem a táskádat</h3><p>Egyedül varrok, így a táskádon az első vágástól az utolsó öltésig én dolgozom.</p></li>
+        <li><span class="n">5</span><h3>Úton hozzád</h3><p>Amikor feladom a csomagot, e-mailben szólok.</p></li>
+      </ol>
+    </section>
+  </div>
+  <section class="sand"><div class="wrap section split">
+      <div class="stack">
+        <h2>Boxok rendelése</h2>
+        <p>A Mi készül? boxokat a Boxok oldal rendelési lapján kérheted. A folytatás ugyanígy e-mailben zajlik.</p>
+        <p><a href="#boxok">Tovább a boxokhoz</a></p>
+      </div>
+      <div class="stack">
+        <h2>Ajándékkártya</h2>
+        <p>Az ajándékkártyát a weboldalon rendeled meg, a fizetés módját e-mailben írom meg, és a fizetés után e-mailben kapod a kódot. Beváltáskor a rendelési lap „Ajándékkártya kódja” mezőjébe kell beírni.</p>
+        <p><a href="#ajandekkartya">Tovább az ajándékkártyához</a></p>
+      </div>
+  </div></section>
+</div>
+
+<!-- GYAKORI KÉRDÉSEK -->
+<div data-view="gyik" hidden>
+  <div class="dark"><div class="wrap"><div class="page-head">
+      <span class="eyebrow">Minden, amit tudni érdemes</span>
+      <h1 tabindex="-1">Gyakori kérdések</h1>
+      <p class="lead">Itt találod a válaszokat a szállításról, a rendelésről, a boxokról és az ajándékkártyáról.</p>
+  </div></div></div>
+  <div class="wrap section" id="faq-list"></div>
+  <section class="sand">
+    <div class="wrap section stack" style="justify-items:start">
+      <h2>Nem találtad meg a választ?</h2>
+      <p>Írj nekem, és e-mailben válaszolok.</p>
+      <a class="btn" href="#kapcsolat">Kapcsolat</a>
+    </div>
+  </section>
+</div>
+
+<!-- KAPCSOLAT -->
+<div data-view="kapcsolat" hidden>
+  <div class="dark"><div class="wrap"><div class="page-head">
+      <span class="eyebrow">Írj nekem bátran</span>
+      <h1 tabindex="-1">Kapcsolat</h1>
+      <p class="lead">Kérdésed van egy táskáról, egy rendelésről vagy egy boxról? Írj az űrlapon, és e-mailben válaszolok.</p>
+  </div></div></div>
+  <section class="sand">
+    <div class="wrap section split">
+      <div class="stack">
+        <h2>Itt találsz meg</h2>
+        <div class="contact-list">
+          <div><span class="eyebrow">E-mail</span><p><a href="mailto:sewbycecilia@gmail.com">sewbycecilia@gmail.com</a></p></div>
+          <div><span class="eyebrow">Közösségi média</span><p>@sewbycecilia</p>
+      <div class="social">
+        <a href="https://www.instagram.com/sewbycecilia/" target="_blank" rel="noopener" aria-label="Instagram: sewbycecilia"><svg aria-hidden="true"><use href="#ic-instagram"></use></svg></a>
+        <a href="https://www.tiktok.com/@sewbycecilia" target="_blank" rel="noopener" aria-label="TikTok: sewbycecilia"><svg aria-hidden="true"><use href="#ic-tiktok"></use></svg></a>
+        <a href="https://www.facebook.com/sewbycecilia" target="_blank" rel="noopener" aria-label="Facebook: sewbycecilia"><svg aria-hidden="true"><use href="#ic-facebook"></use></svg></a>
+      </div>
+          </div>
+          <div><span class="eyebrow">Weboldal</span><p>sewbycecilia.hu</p></div>
+        </div>
+      </div>
+      <div class="form-panel" id="contact-area">
+        <form class="form" id="contact-form" novalidate>
+          <div class="fields-2">
+            <div class="field"><label for="c-name">Név</label><input type="text" id="c-name" autocomplete="name"><div class="err" id="c-name-err" hidden></div></div>
+            <div class="field"><label for="c-email">E-mail cím</label><input type="email" id="c-email" autocomplete="email"><div class="err" id="c-email-err" hidden></div></div>
+          </div>
+          <div class="field"><label for="c-msg">Üzenet</label><textarea id="c-msg" rows="6"></textarea><div class="err" id="c-msg-err" hidden></div></div>
+          <label class="check"><input type="checkbox" id="c-consent"><span>Elfogadom az <a href="#jogi">adatkezelési tájékoztatót</a>.</span></label>
+          <div class="err" id="c-consent-err" hidden></div>
+          <div><button class="btn" type="submit">Üzenet küldése</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- JOGI -->
+<div data-view="jogi" hidden>
+  <div class="dark"><div class="wrap"><div class="page-head">
+      <h1 tabindex="-1">Jogi információk</h1>
+      <p class="lead">Ezeknek a szövegeknek el kell készülniük az oldal indulása előtt.</p>
+    </div></div></div>
+  <div class="wrap">
+    <section class="section">
+      <div class="legal-block"><h3>Általános szerződési feltételek (ÁSZF)</h3><p class="muted">Ide kerülnek a rendelés, a fizetés, a szállítás, az elállás és az ajándékkártya feltételei.</p></div>
+      <div class="legal-block"><h3>Adatkezelési tájékoztató</h3><p class="muted">Ide kerül, milyen adatot, mire és meddig kezelsz, beleértve a hírlevelet is.</p></div>
+      <div class="legal-block"><h3>Impresszum</h3><p class="muted">Ide kerülnek a vállalkozás adatai és az elérhetőségek.</p></div>
+    </section>
+  </div>
+</div>
+
+</main>
+
+<!-- HÍRLEVÉL: minden oldal alján, felugró ablak nélkül -->
+<section class="dark" aria-labelledby="news-title">
+  <div class="wrap section news">
+    <div class="stack">
+      <span class="eyebrow">Hírlevél</span>
+      <h2 id="news-title">Szólok, ha új kollekció vagy limitált darab érkezik</h2>
+    </div>
+    <div id="news-area">
+      <form class="form" id="news-form" novalidate>
+        <div class="news-row">
+          <div class="field">
+            <label for="n-email">E-mail címed</label>
+            <input type="email" id="n-email" autocomplete="email">
+          </div>
+          <button class="btn" type="submit">Feliratkozom</button>
+        </div>
+        <div class="err" id="n-email-err" hidden></div>
+        <label class="check"><input type="checkbox" id="n-consent"><span>Kérem a hírlevelet, és elfogadom az <a href="#jogi">adatkezelési tájékoztatót</a>. Bármikor leiratkozhatok.</span></label>
+        <div class="err" id="n-consent-err" hidden></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <svg class="logo" viewBox="0 0 672 302" role="img" aria-label="Cecília"><use href="#cecilia-logo"></use></svg>
+    <div class="foot-right">
+    <div class="foot-links">
+      <a href="#kapcsolat">Kapcsolat</a>
+      <a href="#gyik">Gyakori kérdések</a>
+      <a href="#jogi">ÁSZF</a>
+      <a href="#jogi">Adatkezelés</a>
+      <a href="#jogi">Impresszum</a>
+    </div>
+      <div class="social">
+        <a href="https://www.instagram.com/sewbycecilia/" target="_blank" rel="noopener" aria-label="Instagram: sewbycecilia"><svg aria-hidden="true"><use href="#ic-instagram"></use></svg></a>
+        <a href="https://www.tiktok.com/@sewbycecilia" target="_blank" rel="noopener" aria-label="TikTok: sewbycecilia"><svg aria-hidden="true"><use href="#ic-tiktok"></use></svg></a>
+        <a href="https://www.facebook.com/sewbycecilia" target="_blank" rel="noopener" aria-label="Facebook: sewbycecilia"><svg aria-hidden="true"><use href="#ic-facebook"></use></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<dialog class="promo" id="promo" aria-labelledby="promo-title">
+  <div class="promo-inner">
+    <button type="button" class="promo-close" id="promo-close" aria-label="Bezárás">×</button>
+    <div class="promo-img" id="promo-img" hidden></div>
+    <div class="promo-copy">
+      <span class="tag" id="promo-tag" hidden></span>
+      <h2 id="promo-title"></h2>
+      <p class="muted" id="promo-text"></p>
+      <a class="btn" id="promo-link" href="#taskak"></a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* A kínálat a data/ mappa JSON-fájljaiból töltődik be. Szerkesztés: sewbycecilia.hu/admin */
+let SEASON, KOLLEKCIO, HIREK, BAGS, BOXES, GYIK, GIFT_AMOUNTS;
+const TONES = ['#DDCFBF', '#D3C2B0', '#E9DFD3'];
+const FILLS = { hobo:'#6B4A33', tote:'#F8F4EF', cross:'#A58C75', clutch:'#8A6F59', bucket:'#5E3E27', mini:'#492A13', box:'#A58C75', charm:'#DDCFBF' };
+const slug = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+function loadData(d) {
+  const k = d.kollekcio;
+  SEASON = k.evszak;
+  KOLLEKCIO = { intro: k.bevezeto, quote: k.idezet, story: k.tortenet, foto: k.foto, fotoLeiras: k.fotoLeiras, colors: (k.szinek || []).map(c => [c.nev, c.szin]) };
+  HIREK = (d.hirek.hirek || []).map(h => ({ type: h.tipus, date: h.datum, title: h.cim, text: h.szoveg, link: h.link, linkText: h.linkSzoveg, foto: h.foto }));
+  BAGS = (d.taskak.taskak || []).map((t, i) => ({ id: slug(t.nev) || 'taska-' + i, name: t.nev, kind: t.rajz || 'tote', tone: TONES[i % 3], fill: FILLS[t.rajz || 'tote'], price: Number(t.ar) || 0,
+    type: t.tipus === 'limitalt' ? 'limited' : 'collection', stock: Number(t.keszlet) || 0, colors: (t.szinek && t.szinek.length) ? t.szinek : ['Egyedi'], foto: t.foto }));
+  BOXES = (d.boxok.boxok || []).map((b, i) => ({ id: slug(b.nev) || 'box-' + i, name: b.nev, kind: b.rajz || 'box', fill: FILLS[b.rajz || 'box'], price: Number(b.ar) || 0, text: b.szoveg, foto: b.foto }));
+  GYIK = (d.gyik.csoportok || []).map((g, i) => ({ group: g.nev, open: i === 0, items: (g.kerdesek || []).map(q => ({ q: q.kerdes, a: q.valasz })) }));
+  GIFT_AMOUNTS = (d.ajandekkartya.osszegek || []).map(Number).filter(n => n > 0);
+  if (!GIFT_AMOUNTS.length) GIFT_AMOUNTS = [10000];
+}
+
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const ft = n => Number(n).toLocaleString('hu-HU').replace(/\s/g, ' ') + ' Ft';
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const FAIL = 'Nem sikerült elküldeni. Próbáld újra pár perc múlva, vagy írj a sewbycecilia@gmail.com címre.';
+/* Űrlap beküldése a Netlify-nak */
+async function send(formName, data) {
+  const body = new URLSearchParams({ 'form-name': formName, ...data });
+  const r = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body.toString() });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+}
+const validEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
+
+/* Illusztrációk: a valódi fotók helyére kerülnek */
+function art(kind, fill) {
+  const line = '#492A13', st = fill === '#F8F4EF' || fill === '#DDCFBF' ? '#6E5240' : '#F8F4EF';
+  const a = `fill="${fill}" stroke="${line}" stroke-width="2.5" stroke-linejoin="round"`;
+  const h = `fill="none" stroke="${line}" stroke-width="5" stroke-linecap="round"`;
+  const s = `fill="none" stroke="${st}" stroke-width="1.6" stroke-dasharray="4 4"`;
+  const shapes = {
+    tote:`<path d="M85 90C85 26 155 26 155 90" ${h}/><path d="M52 88H188L198 212H42Z" ${a}/><path d="M60 98H180L188 203H52Z" ${s}/>`,
+    cross:`<path d="M66 122C52 12 188 12 174 122" ${h}/><path d="M44 118H196C196 178 160 212 120 212C80 212 44 178 44 118Z" ${a}/><path d="M56 128H184C180 172 152 200 120 200C88 200 60 172 56 128Z" ${s}/>`,
+    bucket:`<path d="M66 88C50 22 190 22 174 88" ${h}/><path d="M62 88L178 88L190 206Q120 222 50 206Z" ${a}/><ellipse cx="120" cy="88" rx="58" ry="11" ${a}/><path d="M55 192Q120 208 185 192" ${s}/>`,
+    clutch:`<rect x="36" y="82" width="168" height="118" rx="6" ${a}/><path d="M38 84H202L120 146Z" ${a}/><path d="M50 90H190L120 138Z" ${s}/><circle cx="120" cy="146" r="6" fill="#F8F4EF" stroke="${line}" stroke-width="2"/>`,
+    hobo:`<path d="M58 96C70 14 170 14 182 96" ${h}/><path d="M40 110C60 74 180 74 200 110C206 170 170 210 120 210C70 210 34 170 40 110Z" ${a}/><path d="M52 118C72 90 168 90 188 118C190 164 160 198 120 198C80 198 50 164 52 118Z" ${s}/>`,
+    mini:`<path d="M84 112C84 54 156 54 156 112" ${h}/><path d="M72 110H168L176 192H64Z" ${a}/><path d="M79 119H161L167 184H73Z" ${s}/>`,
+    box:`<path d="M48 96L120 126V206L48 176Z" ${a}/><path d="M192 96L120 126V206L192 176Z" ${a}/><path d="M48 96L120 66L192 96L120 126Z" ${a}/><path d="M84 81L156 111M156 81L84 111" ${s}/><path d="M66 118L102 133V180L66 165Z" fill="#F8F4EF" stroke="${line}" stroke-width="2"/>`,
+    charm:`<path d="M48 110L120 140V206L48 176Z" ${a}/><path d="M192 110L120 140V206L192 176Z" ${a}/><path d="M48 110L120 80L192 110L120 140Z" ${a}/><path d="M84 95L156 125M156 95L84 125" ${s}/><path d="M120 62V36" stroke="${line}" stroke-width="2"/><circle cx="120" cy="28" r="8" fill="none" stroke="${line}" stroke-width="3"/><path d="M120 62L130 74L120 86L110 74Z" fill="#F8F4EF" stroke="${line}" stroke-width="2.5" stroke-linejoin="round"/>`
+  };
+  return `<svg viewBox="0 0 240 240" aria-hidden="true">${shapes[kind]}</svg>`;
+}
+
+const picInner = (o, kind, fill) => o.foto ? `<img src="${esc(o.foto)}" alt="" loading="lazy">` : art(kind, fill);
+const emText = t => esc(t).replace(/\*(.+?)\*/g, '<em>$1</em>');
+function statusTag(b) {
+  if (b.type === 'collection') return '<span class="tag">Megrendelésre</span>';
+  if (b.stock === 0) return '<span class="tag off">Elfogyott</span>';
+  return `<span class="tag">Limitált · még ${b.stock} db</span>`;
+}
+function card(b) {
+  const sold = b.type === 'limited' && b.stock === 0;
+  return `<article class="card${sold ? ' sold' : ''}">
+    <div class="pic" style="--tone:${b.tone}" role="img" aria-label="${esc(b.name)}${b.foto ? '' : ' (illusztráció)'}">${picInner(b, b.kind, b.fill)}${statusTag(b)}</div>
+    <div class="info">
+      <div class="meta"><h3>${esc(b.name)}</h3><span class="price">${ft(b.price)}</span></div>
+      <span class="small muted">${b.colors.length > 1 ? 'Színek: ' + b.colors.map(esc).join(', ') : 'Szín: ' + esc(b.colors[0])}</span>
+      ${sold ? '' : `<button class="btn ghost" type="button" data-pick="${b.id}">Ezt kérem</button>`}
+    </div>
+  </article>`;
+}
+
+function start() {
+if (KOLLEKCIO.foto) { const im = $('.hero-art img'); im.src = KOLLEKCIO.foto; im.alt = KOLLEKCIO.fotoLeiras || ''; }
+const seasonWords = SEASON.split(' ');
+$('#home-title').innerHTML = esc(seasonWords.slice(0, -1).join(' ')) + ' <em>' + esc(seasonWords[seasonWords.length - 1]) + '</em>';
+$('#home-intro').textContent = KOLLEKCIO.intro;
+$('#home-quote').innerHTML = emText(KOLLEKCIO.quote);
+$('#home-story').textContent = KOLLEKCIO.story;
+$('#home-swatches').innerHTML = KOLLEKCIO.colors.map(c => `<div class="swatch"><i style="--c:${c[1]}"></i><span>${esc(c[0])}</span></div>`).join('');
+const hirTop = h => `<div class="hir-top"><span class="eyebrow">${esc(h.type)}</span><span class="hir-date">${esc(h.date)}</span></div>`;
+$('#home-news').innerHTML = !HIREK.length ? '' : `<article class="hir-lead">
+    <div class="pic" style="--tone:#DDCFBF" role="img" aria-label="${esc(HIREK[0].title)}">${picInner(HIREK[0], 'box', '#8F7762')}</div>
+    ${hirTop(HIREK[0])}
+    <h3 class="hir-title" style="font-size:1.9rem">${esc(HIREK[0].title)}</h3>
+    <p>${esc(HIREK[0].text)}</p>
+    <p><a class="textlink" href="${HIREK[0].link}">${esc(HIREK[0].linkText)}</a></p>
+  </article>
+  <ul class="hir-list">${HIREK.slice(1).map(h => `<li>${hirTop(h)}<h3 class="hir-title">${esc(h.title)}</h3><p class="muted">${esc(h.text)}</p><p><a class="textlink" href="${h.link}">${esc(h.linkText)}</a></p></li>`).join('')}</ul>`;
+$$('[data-season-title]').forEach(e => e.textContent = SEASON);
+$('#collection-grid').innerHTML = BAGS.filter(b => b.type === 'collection').map(card).join('');
+$('#limited-grid').innerHTML = BAGS.filter(b => b.type === 'limited').map(card).join('');
+$('#box-list').innerHTML = BOXES.map((b, i) => `<div class="box-row${i % 2 ? ' flip' : ''}">
+  <div class="pic" style="--tone:${i % 2 ? '#D3C2B0' : '#DDCFBF'}" role="img" aria-label="${esc(b.name)}">${picInner(b, b.kind, b.fill)}</div>
+  <div class="stack">
+    <div class="card-title"><h2>${esc(b.name)}</h2></div>
+    <p class="price" style="font-size:1.25rem">${ft(b.price)}</p>
+    <p>${esc(b.text)}</p>
+    <div><span class="eyebrow">A dobozban</span>
+      <ul class="includes" style="margin-top:.5rem"><li>minden alapanyag</li><li>videós útmutató</li></ul></div>
+    <div><button class="btn" type="button" data-box="${b.id}">Ezt kérem</button></div>
+  </div></div>`).join('');
+
+$('#faq-list').innerHTML = GYIK.map(g => `<section class="faq-group">
+  <h2>${esc(g.group)}</h2>
+  <div>${g.items.map(i => `<details class="faq-item"${g.open ? ' open' : ''}><summary>${esc(i.q)}</summary><p${i.todo ? ' class="todo"' : ''}>${esc(i.a)}</p></details>`).join('')}</div>
+</section>`).join('');
+
+/* Rendelési lap: táskához és boxhoz ugyanaz a logika */
+function buildOrderForm(root, prefix, cfg) {
+  const items = cfg.items;
+  const groups = cfg.groups.map(g => {
+    const opts = g.list.map(i => `<option value="${i.id}">${esc(i.name)} · ${ft(i.price)}</option>`).join('');
+    return g.label ? `<optgroup label="${esc(g.label)}">${opts}</optgroup>` : opts;
+  }).join('');
+  const fid = n => prefix + '-' + n;
+
+  function render() {
+    root.innerHTML = `<form class="form" novalidate>
+      <div class="field"><label for="${fid('item')}">${cfg.itemLabel}</label>
+        <select id="${fid('item')}"><option value="">Válassz…</option>${groups}</select>
+        <div class="err" id="${fid('item')}-err" hidden></div></div>
+      ${cfg.hasColor ? `<div class="field"><label for="${fid('color')}">Szín</label><select id="${fid('color')}" disabled><option value="">Előbb válassz táskát</option></select></div>` : ''}
+      ${cfg.hasQty ? `<div class="field"><label for="${fid('qty')}">Mennyiség</label><select id="${fid('qty')}">${[1,2,3,4,5].map(n => `<option>${n}</option>`).join('')}</select></div>` : ''}
+      <div class="fields-2">
+        <div class="field"><label for="${fid('name')}">Név</label><input type="text" id="${fid('name')}" autocomplete="name"><div class="err" id="${fid('name')}-err" hidden></div></div>
+        <div class="field"><label for="${fid('email')}">E-mail cím</label><input type="email" id="${fid('email')}" autocomplete="email"><div class="err" id="${fid('email')}-err" hidden></div></div>
+      </div>
+      <div class="field"><label for="${fid('phone')}">Telefonszám <span class="opt">(nem kötelező)</span></label><input type="tel" id="${fid('phone')}" autocomplete="tel"></div>
+      <div class="field"><label for="${fid('addr')}">Szállítási cím</label><input type="text" id="${fid('addr')}" autocomplete="street-address"><div class="err" id="${fid('addr')}-err" hidden></div></div>
+      <div class="field"><label for="${fid('code')}">Ajándékkártya kódja <span class="opt">(ha van)</span></label><input type="text" id="${fid('code')}" autocomplete="off" placeholder="CECILIA-XXXX-XXXX"></div>
+      <div class="field"><label for="${fid('note')}">Megjegyzés <span class="opt">(nem kötelező)</span></label><textarea id="${fid('note')}" rows="3"></textarea></div>
+      <label class="check"><input type="checkbox" id="${fid('terms')}"><span>Elfogadom az <a href="#jogi">ÁSZF-et és az adatkezelési tájékoztatót</a>.</span></label>
+      <div class="err" id="${fid('terms')}-err" hidden></div>
+      <div class="err" id="${fid('send')}-err" hidden></div>
+      <div><button class="btn" type="submit">Rendelés elküldése</button></div>
+    </form>`;
+    const form = $('form', root);
+    const sel = $('#' + fid('item'));
+    if (cfg.hasColor) sel.addEventListener('change', () => fillColors(sel.value));
+    form.addEventListener('submit', e => { e.preventDefault(); submit(); });
+  }
+  function fillColors(id) {
+    const c = $('#' + fid('color'));
+    if (!c) return;
+    const it = items.find(i => i.id === id);
+    c.disabled = !it;
+    c.innerHTML = it ? it.colors.map(x => `<option>${esc(x)}</option>`).join('') : '<option value="">Előbb válassz táskát</option>';
+  }
+  function setErr(n, msg) {
+    const el = $('#' + fid(n)), er = $('#' + fid(n) + '-err');
+    er.textContent = msg || ''; er.hidden = !msg;
+    if (el.type !== 'checkbox') el.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    return !msg;
+  }
+  async function submit() {
+    const v = n => $('#' + fid(n)).value.trim();
+    const checks = [
+      setErr('item', v('item') ? '' : cfg.itemError),
+      setErr('name', v('name') ? '' : 'Add meg a neved.'),
+      setErr('email', validEmail(v('email')) ? '' : 'Adj meg egy érvényes e-mail címet, például nev@pelda.hu.'),
+      setErr('addr', v('addr') ? '' : 'Add meg, hová küldhetem a csomagot.'),
+      setErr('terms', $('#' + fid('terms')).checked ? '' : 'A rendeléshez el kell fogadnod a feltételeket.')
+    ];
+    if (checks.includes(false)) {
+      const first = $('.err:not([hidden])', root).previousElementSibling;
+      (first && first.focus) ? first.focus() : null;
+      return;
+    }
+    const it = items.find(i => i.id === v('item'));
+    const rows = [['Választott', it.name], ['Ár', ft(it.price)]];
+    if (cfg.hasColor) rows.push(['Szín', v('color')]);
+    if (cfg.hasQty) rows.push(['Mennyiség', v('qty') + ' db']);
+    rows.push(['E-mail', v('email')], ['Cím', v('addr')]);
+    if (v('code')) rows.push(['Ajándékkártya', v('code')]);
+    const data = { termek: it.name, ar: ft(it.price), nev: v('name'), email: v('email'), telefon: v('phone'), cim: v('addr'), ajandekkartya: v('code'), megjegyzes: v('note') };
+    if (cfg.hasColor) data.szin = v('color');
+    if (cfg.hasQty) data.mennyiseg = v('qty');
+    const name = v('name'), email = v('email');
+    const btn = $('button[type=submit]', root);
+    show('#' + fid('send') + '-err', '');
+    btn.disabled = true; btn.textContent = 'Küldés…';
+    try { await send(cfg.formName, data); }
+    catch (_) { btn.disabled = false; btn.textContent = 'Rendelés elküldése'; show('#' + fid('send') + '-err', FAIL); return; }
+    root.innerHTML = `<div class="notice" role="status" tabindex="-1">
+      <h3>Köszönöm, ${esc(name)}! Megkaptam a rendelésedet.</h3>
+      <p>Hamarosan írok a(z) ${esc(email)} címre a végösszegről és a fizetésről.</p>
+      <dl class="summary">${rows.map(r => `<dt>${esc(r[0])}</dt><dd>${esc(r[1])}</dd>`).join('')}</dl>
+      <div><button class="btn ghost" type="button" data-again>Új rendelés</button></div>
+    </div>`;
+    $('[data-again]', root).addEventListener('click', () => { render(); $('#' + fid('item')).focus(); });
+    $('.notice', root).focus();
+  }
+  render();
+  return {
+    pick(id) {
+      if (!$('form', root)) render();
+      const sel = $('#' + fid('item'));
+      sel.value = id;
+      fillColors(id);
+      root.scrollIntoView({ block: 'start' });
+      const next = cfg.hasColor ? $('#' + fid('color')) : $('#' + fid('qty'));
+      next.focus({ preventScroll: true });
+    }
+  };
+}
+
+const orderable = BAGS.filter(b => b.type === 'collection' || b.stock > 0);
+const bagForm = buildOrderForm($('#bag-order'), 'bag', {
+  formName: 'rendeles-taska', items: orderable, itemLabel: 'Táska', itemError: 'Válassz táskát a listából.', hasColor: true, hasQty: false,
+  groups: [
+    { label: SEASON, list: orderable.filter(b => b.type === 'collection') },
+    { label: 'Limitált darabok', list: orderable.filter(b => b.type === 'limited') }
+  ]
+});
+const boxForm = buildOrderForm($('#box-order'), 'box', {
+  formName: 'rendeles-box', items: BOXES, itemLabel: 'Box', itemError: 'Válassz boxot a listából.', hasColor: false, hasQty: true,
+  groups: [{ list: BOXES }]
+});
+
+/* Oldalváltás */
+const VIEWS = ['fooldal', 'taskak', 'boxok', 'ajandekkartya', 'rendeles-menete', 'gyik', 'kapcsolat', 'jogi'];
+const TITLES = { fooldal:'Cecília táskák', taskak:'Táskák · Cecília', boxok:'Mi készül? boxok · Cecília', ajandekkartya:'Ajándékkártya · Cecília', 'rendeles-menete':'Rendelés menete · Cecília', gyik:'Gyakori kérdések · Cecília', kapcsolat:'Kapcsolat · Cecília', jogi:'Jogi információk · Cecília' };
+let pendingPick = null;
+function route() {
+  const raw = location.hash.slice(1);
+  const name = VIEWS.includes(raw) ? raw : 'fooldal';
+  $$('[data-view]').forEach(v => v.hidden = v.dataset.view !== name);
+  $$('[data-nav]').forEach(a => a.dataset.nav === name ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+  document.title = TITLES[name];
+  if (pendingPick) { const id = pendingPick; pendingPick = null; bagForm.pick(id); return; }
+  window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', route);
+document.addEventListener('click', e => {
+  const pick = e.target.closest('[data-pick]');
+  if (pick) {
+    if (location.hash === '#taskak') { bagForm.pick(pick.dataset.pick); }
+    else { pendingPick = pick.dataset.pick; location.hash = 'taskak'; }
+  }
+  const box = e.target.closest('[data-box]');
+  if (box) boxForm.pick(box.dataset.box);
+});
+$('#jump-order').addEventListener('click', e => { e.preventDefault(); $('#rendelesi-lap').scrollIntoView({ block: 'start' }); });
+
+/* Ajándékkártya */
+let giftAmount = GIFT_AMOUNTS[Math.min(2, GIFT_AMOUNTS.length - 1)];
+$('#gift-amounts').innerHTML = GIFT_AMOUNTS.map(a => `<label><input type="radio" name="g-amount" id="g-a-${a}" value="${a}"${a === giftAmount ? ' checked' : ''}><span>${ft(a)}</span></label>`).join('')
+  + `<label><input type="radio" name="g-amount" id="g-a-custom" value="custom"><span>Egyéni</span></label>`;
+
+function giftPreview() {
+  const custom = $('#g-a-custom').checked;
+  $('#gift-custom-wrap').hidden = !custom;
+  const n = custom ? Number($('#g-custom').value) : Number($('input[name=g-amount]:checked').value);
+  giftAmount = n;
+  $('#p-amt').textContent = n ? ft(n) : '– Ft';
+  $('#p-msg').textContent = $('#g-msg').value.trim() || 'Válassz magadnak valami szépet!';
+  const to = $('#g-to').value.trim(), from = $('#g-from').value.trim();
+  $('#p-who').textContent = [to && ('Neki: ' + to), from && ('Tőle: ' + from)].filter(Boolean).join(' · ');
+  $('#p-who').hidden = !(to || from);
+}
+$('#gift-form').addEventListener('input', giftPreview);
+giftPreview();
+
+function show(id, msg) { const e = $(id); e.textContent = msg || ''; e.hidden = !msg; return !msg; }
+$('#gift-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const custom = $('#g-a-custom').checked;
+  const okAmt = !custom || show('#g-custom-err', giftAmount >= 1000 ? '' : 'Az egyéni összeg legalább 1 000 Ft legyen.');
+  const okMail = show('#g-email-err', validEmail($('#g-email').value) ? '' : 'Adj meg egy érvényes e-mail címet, ide küldöm a kódot.');
+  const okTerms = show('#g-terms-err', $('#g-terms').checked ? '' : 'A vásárláshoz el kell fogadnod a feltételeket.');
+  if (!(okAmt && okMail && okTerms)) return;
+  const mail = $('#g-email').value.trim(), btn = $('#g-submit');
+  show('#g-send-err', '');
+  btn.disabled = true; btn.textContent = 'Küldés…';
+  try {
+    await send('ajandekkartya', { osszeg: ft(giftAmount), kinek: $('#g-to').value.trim(), kitol: $('#g-from').value.trim(), uzenet: $('#g-msg').value.trim(), email: mail });
+  } catch (_) { btn.disabled = false; btn.textContent = 'Megrendelem'; show('#g-send-err', FAIL); return; }
+  btn.textContent = 'Megrendelem';
+  $('#r-text').textContent = 'Hamarosan írok a(z) ' + mail + ' címre a fizetés módjáról. A fizetés beérkezése után ugyanide küldöm az ajándékkártya kódját.';
+  $('#gift-result').hidden = false;
+  $('#gift-result').focus();
+});
+$('#r-new').addEventListener('click', () => {
+  $('#gift-form').reset();
+  $('#g-a-' + GIFT_AMOUNTS[Math.min(2, GIFT_AMOUNTS.length - 1)]).checked = true;
+  $('#gift-result').hidden = true;
+  $('#g-submit').disabled = false;
+  giftPreview();
+});
+
+/* Hírlevél */
+$('#news-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const mail = $('#n-email').value.trim();
+  const a = show('#n-email-err', validEmail(mail) ? '' : 'Adj meg egy érvényes e-mail címet.');
+  const b = show('#n-consent-err', $('#n-consent').checked ? '' : 'A feliratkozáshoz pipáld ki a jelölőnégyzetet.');
+  if (!(a && b)) return;
+  const btn = $('#news-form button[type=submit]');
+  btn.disabled = true;
+  try { await send('hirlevel', { email: mail }); }
+  catch (_) { btn.disabled = false; show('#n-consent-err', FAIL); return; }
+  const box = document.createElement('div');
+  box.className = 'notice'; box.setAttribute('role', 'status');
+  box.innerHTML = '<h3>Köszönöm, feliratkoztál!</h3><p></p>';
+  box.querySelector('p').textContent = 'A(z) ' + mail + ' címre szólok, ha új kollekció vagy limitált darab érkezik.';
+  $('#news-area').replaceChildren(box);
+});
+
+/* Kapcsolat */
+$('#contact-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const name = $('#c-name').value.trim(), mail = $('#c-email').value.trim();
+  const a = show('#c-name-err', name ? '' : 'Add meg a neved.');
+  const b = show('#c-email-err', validEmail(mail) ? '' : 'Adj meg egy érvényes e-mail címet, ide válaszolok.');
+  const c = show('#c-msg-err', $('#c-msg').value.trim() ? '' : 'Írd le, miben segíthetek.');
+  const d = show('#c-consent-err', $('#c-consent').checked ? '' : 'Az üzenetküldéshez pipáld ki a jelölőnégyzetet.');
+  if (!(a && b && c && d)) return;
+  const btn = $('#contact-form button[type=submit]');
+  btn.disabled = true; btn.textContent = 'Küldés…';
+  try { await send('kapcsolat', { nev: name, email: mail, uzenet: $('#c-msg').value.trim() }); }
+  catch (_) { btn.disabled = false; btn.textContent = 'Üzenet küldése'; show('#c-consent-err', FAIL); return; }
+  const box = document.createElement('div');
+  box.className = 'notice'; box.setAttribute('role', 'status');
+  box.innerHTML = '<h3></h3><p></p>';
+  box.querySelector('h3').textContent = 'Köszönöm, ' + name + '!';
+  box.querySelector('p').textContent = 'Megkaptam az üzenetedet, és a(z) ' + mail + ' címre válaszolok.';
+  $('#contact-area').replaceChildren(box);
+});
+
+route();
+}
+
+Promise.all(['kollekcio', 'hirek', 'taskak', 'boxok', 'gyik', 'ajandekkartya'].map(n =>
+  fetch('data/' + n + '.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(n); return r.json(); })))
+  .then(([kollekcio, hirek, taskak, boxok, gyik, ajandekkartya]) => { loadData({ kollekcio, hirek, taskak, boxok, gyik, ajandekkartya }); start(); })
+  .catch(err => { console.error(err); document.querySelector('main').insertAdjacentHTML('afterbegin', '<div class="wrap section"><p>Az oldal tartalma most nem töltődött be. Frissítsd az oldalt, vagy írj a sewbycecilia@gmail.com címre.</p></div>'); });
+
+/* Felugró reklám: a data/popup.json-ból, munkamenetenként egyszer jelenik meg */
+fetch('data/popup.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(p => {
+  if (!p || !p.aktiv || !p.cim) return;
+  if (p.lejarat && new Date() > new Date(p.lejarat + 'T23:59:59')) return;
+  const key = 'promo-seen:' + p.cim;
+  try { if (sessionStorage.getItem(key)) return; } catch (_) {}
+  const dlg = $('#promo');
+  if (!dlg || typeof dlg.showModal !== 'function') return;
+  $('#promo-title').innerHTML = emText(p.cim);
+  $('#promo-text').textContent = p.szoveg || '';
+  $('#promo-text').hidden = !p.szoveg;
+  if (p.cimke) { $('#promo-tag').textContent = p.cimke; $('#promo-tag').hidden = false; }
+  const link = $('#promo-link');
+  if (p.link && p.linkSzoveg) { link.href = p.link; link.textContent = p.linkSzoveg; } else link.hidden = true;
+  if (p.foto) {
+    const img = document.createElement('img'); img.src = p.foto; img.alt = '';
+    $('#promo-img').replaceChildren(img); $('#promo-img').hidden = false;
+    $('.promo-inner', dlg).classList.add('has-img');
+  }
+  const close = () => dlg.close();
+  $('#promo-close').addEventListener('click', close);
+  link.addEventListener('click', close);
+  dlg.addEventListener('click', e => { if (e.target === dlg) close(); });
+  dlg.addEventListener('close', () => { try { sessionStorage.setItem(key, '1'); } catch (_) {} });
+  setTimeout(() => { if (!document.querySelector('dialog[open]')) dlg.showModal(); }, Math.max(0, Number(p.kesleltetes) || 0) * 1000);
+}).catch(() => {});
+</script>
+</body>
+</html>

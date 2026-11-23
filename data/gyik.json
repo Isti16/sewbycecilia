@@ -1,0 +1,85 @@
+{
+  "csoportok": [
+    {
+      "nev": "Szállítás",
+      "kerdesek": [
+        {
+          "kerdes": "Hogyan kapom meg a csomagot?",
+          "valasz": "Kitöltendő: milyen szállítási módok közül lehet választani (például futár, csomagpont, személyes átvétel)."
+        },
+        {
+          "kerdes": "Mennyibe kerül a szállítás?",
+          "valasz": "Kitöltendő: a szállítási díjak, és hogy van-e olyan összeg, amely felett ingyenes."
+        },
+        {
+          "kerdes": "Mikor adod fel a rendelésemet?",
+          "valasz": "Amint elkészült a rendelésed, feladom, és e-mailben szólok róla. Az elkészülés várható idejét már a visszaigazoló levélben megírom."
+        },
+        {
+          "kerdes": "Külföldre is küldesz?",
+          "valasz": "Kitöltendő: küldesz-e külföldre, és ha igen, mely országokba, milyen díjjal."
+        }
+      ]
+    },
+    {
+      "nev": "Rendelés és fizetés",
+      "kerdesek": [
+        {
+          "kerdes": "Hogyan tudok rendelni?",
+          "valasz": "Kiválasztod a táskát vagy a boxot, majd kitöltöd a rendelési lapot ugyanazon az oldalon. Minden továbbit e-mailben intézünk."
+        },
+        {
+          "kerdes": "Mikor kell fizetnem?",
+          "valasz": "A rendelés leadásakor még nem. A visszaigazoló e-mailben megírom a végösszeget és a fizetés módját."
+        },
+        {
+          "kerdes": "Mi a különbség a kollekció és a limitált darabok között?",
+          "valasz": "Az állandó kollekció darabjait megrendelésre készítem el. A limitált darabokból csak pár készül, ezért csak addig rendelhetők, amíg el nem fogynak."
+        },
+        {
+          "kerdes": "Kérhetek egyedi táskát vagy más színt?",
+          "valasz": "Kitöltendő: vállalsz-e egyedi kéréseket, és mire terjednek ki."
+        },
+        {
+          "kerdes": "Visszaküldhetem a rendelésemet?",
+          "valasz": "Kitöltendő: az elállás és a visszaküldés feltételei. Ennek egyeznie kell az ÁSZF-fel."
+        }
+      ]
+    },
+    {
+      "nev": "Mi készül? boxok",
+      "kerdesek": [
+        {
+          "kerdes": "Mi van a boxban?",
+          "valasz": "Minden alapanyag, ami a neszesszer vagy a charm elkészítéséhez kell, és egy videós útmutató."
+        },
+        {
+          "kerdes": "Hol találom a videós útmutatót?",
+          "valasz": "Kitöltendő: hogyan éri el a vevő a videót (például QR-kód a dobozban vagy link e-mailben)."
+        }
+      ]
+    },
+    {
+      "nev": "Ajándékkártya",
+      "kerdesek": [
+        {
+          "kerdes": "Hogyan váltható be az ajándékkártya?",
+          "valasz": "A rendelési lap „Ajándékkártya kódja” mezőjébe kell beírni a kódot, táskánál és boxnál is."
+        },
+        {
+          "kerdes": "Meddig érvényes az ajándékkártya?",
+          "valasz": "Kitöltendő: az érvényességi idő. Ennek egyeznie kell az ÁSZF-fel."
+        }
+      ]
+    },
+    {
+      "nev": "Táskák",
+      "kerdesek": [
+        {
+          "kerdes": "Hogyan ápoljam a táskámat?",
+          "valasz": "Kitöltendő: tisztítási és tárolási tanácsok az anyagok szerint."
+        }
+      ]
+    }
+  ]
+}

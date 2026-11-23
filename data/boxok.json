@@ -1,0 +1,18 @@
+{
+  "boxok": [
+    {
+      "nev": "Neszesszer box",
+      "ar": 14900,
+      "szoveg": "Varrd meg a saját neszesszeredet otthon. A dobozban megkapod hozzá az összes alapanyagot.",
+      "foto": "",
+      "rajz": "box"
+    },
+    {
+      "nev": "Charmkészítő box",
+      "ar": 7900,
+      "szoveg": "Készíts saját charmot a táskádra vagy a kulcsaidra. A dobozban minden benne van, ami a munkához kell.",
+      "foto": "",
+      "rajz": "charm"
+    }
+  ]
+}

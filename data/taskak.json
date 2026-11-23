@@ -1,0 +1,76 @@
+{
+  "taskak": [
+    {
+      "nev": "Mara válltáska",
+      "ar": 32900,
+      "tipus": "kollekcio",
+      "keszlet": null,
+      "szinek": [
+        "Dió",
+        "Karamell",
+        "Fekete"
+      ],
+      "foto": "",
+      "rajz": "hobo"
+    },
+    {
+      "nev": "Ida bevásárlótáska",
+      "ar": 24900,
+      "tipus": "kollekcio",
+      "keszlet": null,
+      "szinek": [
+        "Natúr",
+        "Homok",
+        "Dió"
+      ],
+      "foto": "",
+      "rajz": "tote"
+    },
+    {
+      "nev": "Noa keresztpántos",
+      "ar": 28900,
+      "tipus": "kollekcio",
+      "keszlet": null,
+      "szinek": [
+        "Teve",
+        "Dió",
+        "Fekete"
+      ],
+      "foto": "",
+      "rajz": "cross"
+    },
+    {
+      "nev": "Borostyán kézitáska",
+      "ar": 29900,
+      "tipus": "limitalt",
+      "keszlet": 2,
+      "szinek": [
+        "Borostyán"
+      ],
+      "foto": "",
+      "rajz": "clutch"
+    },
+    {
+      "nev": "Fahéj vödörtáska",
+      "ar": 34900,
+      "tipus": "limitalt",
+      "keszlet": 1,
+      "szinek": [
+        "Fahéj"
+      ],
+      "foto": "",
+      "rajz": "bucket"
+    },
+    {
+      "nev": "Kakaó minitáska",
+      "ar": 21900,
+      "tipus": "limitalt",
+      "keszlet": 0,
+      "szinek": [
+        "Kakaó"
+      ],
+      "foto": "",
+      "rajz": "mini"
+    }
+  ]
+}

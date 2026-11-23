@@ -1,0 +1,34 @@
+{
+  "evszak": "Téli kollekció",
+  "bevezeto": "Meleg barnák és puha formák a hideg napokra. A kollekció minden darabját megrendelésre, kézzel varrom.",
+  "idezet": "Csendes színek, tiszta vonalak, *hosszú telekre.*",
+  "tortenet": "Ide kerül a kollekció története: mi inspirálta, milyen anyagokból készül, és mitől lesz más, mint az előző évszaké. Néhány mondat elég, a darabokat a Táskák oldal mutatja be.",
+  "foto": "/img/teli-kollekcio.jpg",
+  "fotoLeiras": "A téli kollekció anyagmintái és táskavázlatai egy tóparti fotón: barna, bordó, gyöngyházfehér, fekete, őzmintás és krémszínű szőrmés anyagok.",
+  "szinek": [
+    {
+      "nev": "Natúr",
+      "szin": "#E8DCCB"
+    },
+    {
+      "nev": "Homok",
+      "szin": "#CDB99E"
+    },
+    {
+      "nev": "Teve",
+      "szin": "#A67E57"
+    },
+    {
+      "nev": "Karamell",
+      "szin": "#84492A"
+    },
+    {
+      "nev": "Dió",
+      "szin": "#5A3C29"
+    },
+    {
+      "nev": "Fekete",
+      "szin": "#17110D"
+    }
+  ]
+}
