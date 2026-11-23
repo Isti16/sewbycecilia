@@ -1,10 +1,10 @@
 {
   "evszak": "Téli kollekció",
-  "bevezeto": "Meleg barnák és puha formák a hideg napokra. A kollekció minden darabját megrendelésre, kézzel varrom.",
-  "idezet": "Csendes színek, tiszta vonalak, *hosszú telekre.*",
-  "tortenet": "Ide kerül a kollekció története: mi inspirálta, milyen anyagokból készül, és mitől lesz más, mint az előző évszaké. Néhány mondat elég, a darabokat a Táskák oldal mutatja be.",
-  "foto": "/img/teli-kollekcio.jpg",
-  "fotoLeiras": "A téli kollekció anyagmintái és táskavázlatai egy tóparti fotón: barna, bordó, gyöngyházfehér, fekete, őzmintás és krémszínű szőrmés anyagok.",
+  "bevezeto": "A kollekció minden darabja egyedi, és rendelésre készül.",
+  "idezet": "Egy kis *cozy* a rohanós napokra is.",
+  "tortenet": "A teddy anyaggal a „cozy” hangulatot hozom kicsit közelebb, még ha egy rohanósabb napról is van szó.\nA kollekcióban arra törekedtem, hogy az extrább fodros táskákat most elegánsabban jelenítsem meg, de közben megmaradjon a kis plusz is.\nA bambi minta pedig tökéletesen illik a színvilágba.",
+  "foto": "/img/tel-2627.jpg",
+  "fotoLeiras": "A Tél 26/27 kollekció öt táskája bézs háttéren: bambimintás fodros, bézs teddy, fekete fodros műbőr, fekete és világos fodros táska.",
   "szinek": [
     {
       "nev": "Natúr",
@@ -30,5 +30,9 @@
       "nev": "Fekete",
       "szin": "#17110D"
     }
-  ]
+  ],
+  "gombSzoveg": "Állandó darabok",
+  "dropSzoveg": "Az állandó darabok mellett limitált dropok is érkeznek. Ha nem szeretnél lemaradni, [iratkozz fel a hírlevelemre].",
+  "anyagFoto": "/img/anyagok.jpg",
+  "anyagLeiras": "A kollekció anyagai egy tóparti fotón: barna gyapjú, bambiminta, gyöngyházfehér, bordó, fekete műbőr és krémszínű teddy, a táskák vázlataival."
 }

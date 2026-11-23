@@ -26,8 +26,12 @@ collections:
         fields:
           - { name: evszak, label: "Kollekció neve", widget: string, hint: "Például: Téli kollekció. Az utolsó szó dőlten jelenik meg a főoldalon." }
           - { name: bevezeto, label: "Bevezető szöveg", widget: text }
+          - { name: gombSzoveg, label: "A gomb szövege", widget: string, required: false, default: "Állandó darabok" }
+          - { name: dropSzoveg, label: "Szöveg a gomb alatt", widget: text, required: false, hint: "A [szögletes zárójelbe] írt rész link lesz a hírlevél-feliratkozáshoz." }
           - { name: idezet, label: "Kiemelt mondat", widget: string, hint: "A *csillagok közé* írt rész dőlt lesz." }
-          - { name: tortenet, label: "A kollekció története", widget: text }
+          - { name: tortenet, label: "A kollekció története", widget: text, hint: "Minden új sor külön bekezdés lesz." }
+          - { name: anyagFoto, label: "Anyagok fotója", widget: image, required: false, hint: "Ha van, a színminták helyett ez jelenik meg. Széles fotó mutat jól." }
+          - { name: anyagLeiras, label: "Mi látszik az anyagfotón?", widget: string, required: false }
           - { name: foto, label: "Főoldali fotó", widget: image, required: false }
           - { name: fotoLeiras, label: "Mi látszik a fotón?", widget: string, required: false, hint: "Rövid leírás látássérült látogatóknak és a Google-nek." }
           - name: szinek
@@ -148,6 +152,31 @@ collections:
                   - { name: kerdes, label: "Kérdés", widget: string }
                   - { name: valasz, label: "Válasz", widget: text }
 
+      - name: popup
+        label: Kiemelt értesítés (sarokkártya)
+        file: data/popup.json
+        format: json
+        fields:
+          - { name: aktiv, label: "Megjelenjen?", widget: boolean, default: false }
+          - { name: cimke, label: "Címke", widget: string, required: false, hint: "Például: Akció, Újdonság, Utolsó darabok" }
+          - { name: cim, label: "Cím", widget: string, hint: "A *csillagok közé* írt rész dőlt lesz." }
+          - { name: szoveg, label: "Szöveg", widget: text, required: false, hint: "Egy-két mondat elég, a kártya kicsi." }
+          - name: link
+            label: "Hová vigyen a gomb?"
+            widget: select
+            required: false
+            options:
+              - { label: "Táskák", value: "#taskak" }
+              - { label: "Boxok", value: "#boxok" }
+              - { label: "Ajándékkártya", value: "#ajandekkartya" }
+              - { label: "Rendelés menete", value: "#rendeles-menete" }
+              - { label: "Gyakori kérdések", value: "#gyik" }
+              - { label: "Kapcsolat", value: "#kapcsolat" }
+          - { name: linkSzoveg, label: "A gomb szövege", widget: string, required: false }
+          - { name: foto, label: "Fotó", widget: image, required: false, hint: "Fekvő (16:9) fotó mutat jól." }
+          - { name: lejarat, label: "Utolsó nap", widget: datetime, required: false, format: "YYYY-MM-DD", date_format: "YYYY. MM. DD.", time_format: false, hint: "Ezután a nap után magától eltűnik." }
+          - { name: kesleltetes, label: "Hány másodperc után jelenjen meg?", widget: number, value_type: int, min: 0, default: 4 }
+
       - name: ajandekkartya
         label: Ajándékkártya
         file: data/ajandekkartya.json
@@ -157,27 +186,3 @@ collections:
             label: "Választható összegek (Ft)"
             widget: list
             field: { name: osszeg, label: "Összeg (Ft)", widget: number, value_type: int, min: 1000 }
-
-      - name: popup
-        label: Felugró reklám
-        file: data/popup.json
-        format: json
-        fields:
-          - { name: aktiv, label: "Megjelenjen?", widget: boolean, default: true, hint: "Kapcsold ki, ha most nem szeretnél felugró reklámot." }
-          - { name: cimke, label: "Címke", widget: string, required: false, hint: "Például: Akció, Újdonság." }
-          - { name: cim, label: "Cím", widget: string, hint: "A *csillagok közé* írt rész dőlt lesz." }
-          - { name: szoveg, label: "Szöveg", widget: text, required: false }
-          - name: link
-            label: "Hová vigyen a gomb?"
-            widget: select
-            options:
-              - { label: "Táskák", value: "#taskak" }
-              - { label: "Boxok", value: "#boxok" }
-              - { label: "Ajándékkártya", value: "#ajandekkartya" }
-              - { label: "Rendelés menete", value: "#rendeles-menete" }
-              - { label: "Gyakori kérdések", value: "#gyik" }
-              - { label: "Kapcsolat", value: "#kapcsolat" }
-          - { name: linkSzoveg, label: "A gomb szövege", widget: string }
-          - { name: foto, label: "Fotó", widget: image, required: false }
-          - { name: lejarat, label: "Meddig látszódjon?", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY.MM.DD.", time_format: false, required: false, hint: "Ezután a nap után magától eltűnik. Üresen hagyva nincs lejárat." }
-          - { name: kesleltetes, label: "Hány másodperc múlva ugorjon fel?", widget: number, value_type: int, min: 0, default: 4 }

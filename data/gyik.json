@@ -13,7 +13,7 @@
         },
         {
           "kerdes": "Mikor adod fel a rendelésemet?",
-          "valasz": "Amint elkészült a rendelésed, feladom, és e-mailben szólok róla. Az elkészülés várható idejét már a visszaigazoló levélben megírom."
+          "valasz": "Amint elkészült a rendelésed, szólok, és feladom. A csomag feladásáról a futárszolgálat küld értesítést. Az elkészülés várható idejét már a visszaigazoló levélben megírom."
         },
         {
           "kerdes": "Külföldre is küldesz?",
@@ -55,7 +55,7 @@
         },
         {
           "kerdes": "Hol találom a videós útmutatót?",
-          "valasz": "Kitöltendő: hogyan éri el a vevő a videót (például QR-kód a dobozban vagy link e-mailben)."
+          "valasz": "A dobozban találsz egy QR-kódot. A telefonoddal beolvasod, és rögtön a videós útmutatóhoz jutsz."
         }
       ]
     },
