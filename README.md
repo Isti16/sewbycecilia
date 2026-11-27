@@ -2,7 +2,8 @@
 
 Statikus weboldal, Netlify-on fut. Minden push a `main` ágra automatikusan élesít.
 
-- `index.html`: az oldal (dizájn, űrlapok, működés)
+- `index.html`: ideiglenes „Az oldal készül” lap
+- `elonezet.html`: a teljes oldal (dizájn, űrlapok, működés). Élesítéskor: töröld az `index.html`-t, és nevezd át ezt `index.html`-re, a `noindex` sort pedig vedd ki belőle.
 - `data/*.json`: a tartalom (kollekció, táskák, boxok, hírek, GYIK, ajándékkártya-összegek)
 - `admin/`: szerkesztőfelület (Decap CMS), elérhető itt: https://sewbycecilia.hu/admin
 - `img/feltoltott/`: a szerkesztőben feltöltött fotók
