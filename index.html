@@ -8,7 +8,10 @@
 <meta property="og:title" content="Cecília táskák · hamarosan">
 <meta property="og:description" content="Készül a weboldal. Addig az Instagramon és e-mailben érsz el.">
 <meta property="og:image" content="https://sewbycecilia.hu/img/tel-2627.jpg">
+<link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#E9DFD3">
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
 /* Ideiglenes „készül az oldal” lap. A teljes oldal az elonezet.html-ben van. */
@@ -41,9 +44,10 @@ h1 em { font-weight: 400; }
 .social a:hover { background: var(--dio); color: var(--ivory); }
 .social svg { width: 1.3rem; height: 1.3rem; display: block; }
 figure { margin: 0; display: grid; gap: .75rem; justify-items: center; }
-.frame { position: relative; background: var(--bezs); padding: 14px; width: min(100%, 420px); }
-.frame::after { content: ""; position: absolute; inset: 7px; border: 1px dashed var(--teve); pointer-events: none; }
-.frame img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.cat { position: relative; width: min(100%, 400px); padding-bottom: 6%; }
+.cat::before { content: ""; position: absolute; left: 6%; right: 6%; bottom: 0; height: 16%; border-radius: 50%; background: var(--bezs); }
+.cat::after { content: ""; position: absolute; left: 10%; right: 10%; bottom: 2%; height: 12%; border-radius: 50%; border: 1px dashed var(--teve); }
+.cat img { position: relative; z-index: 1; display: block; width: 100%; height: auto; }
 figcaption { font: italic 400 1.05rem/1.4 var(--display); color: var(--halk); text-align: center; }
 footer { font-size: .85rem; color: var(--halk); }
 footer .wrap { padding-block: 1.5rem; border-top: 1px solid var(--vonal); }
@@ -102,7 +106,7 @@ footer .wrap { padding-block: 1.5rem; border-top: 1px solid var(--vonal); }
       </div>
     </div>
     <figure>
-      <div class="frame"><img src="img/macska.jpg" width="800" height="1000" alt="Vörös cirmos macska ül a padlón, és egyenesen a kamerába néz."></div>
+      <div class="cat"><picture><source srcset="img/macska.webp" type="image/webp"><img src="img/macska.png" width="760" height="1065" alt="Vörös cirmos macska ül, és egyenesen a kamerába néz."></picture></div>
       <figcaption>Addig ő vigyáz a műhelyre.</figcaption>
     </figure>
   </div>
